@@ -32,37 +32,29 @@
 └── .env.example                       # API key 模板（复制为 .env）
 ```
 
-## 微信推送（可选，强烈建议）
+## 推送：Bark（iOS，主力通道）
 
-日报生成后，可以把「今日风向 + TOP3 机会信号」自动推到你的**个人微信**。走微信官方通道：公众号测试号 + 模板消息，免费、合规、无需第三方付费服务。
+日报生成后，把「今日风向 + 机会信号表」全文推到 **iPhone 系统通知栏**（Bark，开源免费）。通知展开即可读全文，点击直达完整报告。
 
-**一次性申请**（约 3 分钟）：
-1. 打开 https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login 用微信扫码登录
-2. 记下页面顶部的 `appID` 和 `appsecret`
-3. 页面下方「测试号二维码」，用自己微信扫码关注 → 用户列表出现自己 → 记下 `openid`
-4. 「新增测试模板」，模板标题随意，模板内容填：
-   ```
-   瞭望塔：{{title.DATA}}
-   机会1：{{s1.DATA}}
-   机会2：{{s2.DATA}}
-   机会3：{{s3.DATA}}
-   {{note.DATA}}
-   ```
-   提交后记下 `template_id`
+**一次性配置**（约 2 分钟）：
+1. App Store 安装 **Bark**（开发者 Finb）
+2. 打开 App 允许通知，首页地址 `https://api.day.app/KEY/` 中间的 `KEY` 即为设备密钥
+3. 配置：
+   - 本地：`.env` 填 `BARK_DEVICE_KEY`
+   - 云端：GitHub `Settings → Secrets and variables → Actions` 添加 `BARK_DEVICE_KEY`
 
-**配置**：
-- 本地：`.env` 里填 `WECHAT_APPID / WECHAT_APPSECRET / WECHAT_OPENID / WECHAT_TEMPLATE_ID`，跑 `python watchtower/wechat_push.py`
-- 云端：GitHub 仓库 `Settings → Secrets and variables → Actions` 添加同名 4 个 Secrets（workflow 已内置推送步骤）
+> 注意：Bark 服务器请求体约 4KB（≈1200 中文字）上限，推送模块已内置「按节智能裁剪」，
+> 报告过长时优先保留今日风向与机会信号，其余点击通知看完整报告。
 
-**收到的消息长这样**：
+## 微信推送（可选，默认停用）
 
-> 瞭望塔：县域消费政策+AI视频工具化成今日两大信号
-> 机会1：县域消费政策红利（高）
-> 机会2：AI 视频/电影制作工具化（高）
-> 机会3：公积金新政带动的服务需求（中）
-> 信源 11/11 正常 · 点此看完整报告
-
-点消息直达当天完整日报（GitHub 上的 Markdown 页面）。
+`watchtower/wechat_push.py` 提供微信官方通道（公众号测试号 + 模板消息）。当前 workflow 已停用该步骤（用户偏好 Bark）；需要恢复时取消
+`.github/workflows/watchtower.yml` 中对应注释，并配置 4 个 Secrets：
+`WECHAT_APPID / WECHAT_APPSECRET / WECHAT_OPENID / WECHAT_TEMPLATE_ID`。
+申请流程：https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login 扫码登录，
+记下 appID/appsecret → 扫码关注后记下 openid → 新增测试模板（内容填
+`瞭望塔：{{title.DATA}} / 机会1：{{s1.DATA}} ... / {{note.DATA}}`）记下 template_id。
+模板消息字段有显示长度限制，只能放短摘要，故作为 Bark 的补充通道。
 
 ## 本地运行
 
