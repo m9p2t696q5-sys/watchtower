@@ -21,18 +21,36 @@ import requests
 from watchtower.utils import REPO_ROOT, load_env, repo_report_url, today_cn
 
 BARK_URL = "https://api.day.app/push"
-BODY_MAX = 3000  # 通知栏长文上限（字符），超长截断
+BODY_MAX = 1200  # Bark 服务器请求体约 4KB 上限（约 1200 中文字），超限返回 413
 
 
 def extract_ai_section(report_md):
-    """抽取日报中的 AI 机会报告部分（从 ## AI 机会报告 到 ## 附录 之前）。"""
+    """抽取日报中的 AI 机会报告部分，并按节智能裁剪到 Bark 上限。
+
+    优先保留「今日风向」「机会信号」等靠前的节；截断点落在小节边界，
+    避免把表格切一半。
+    """
     m = re.search(r"## AI 机会报告\s*\n(.*?)(?=\n## 附录)", report_md, re.S)
     if not m:
         return report_md[:BODY_MAX]
     body = m.group(1).strip()
     # 去掉「降级提示」这类以 > 开头的说明行
     body = "\n".join(l for l in body.splitlines() if not l.startswith(">"))
-    return body[:BODY_MAX]
+    if len(body) <= BODY_MAX:
+        return body
+    sections = re.split(r"(?=## )", body)
+    out = []
+    for sec in sections:
+        if len("\n\n".join(out + [sec])) <= BODY_MAX - 40:
+            out.append(sec)
+        else:
+            break
+    text = "\n\n".join(out).strip()
+    if out:
+        text += "\n\n— 内容较多，点此通知查看完整报告 —"
+    else:
+        text = body[:BODY_MAX]
+    return text
 
 
 def push(date_str, report_md):
@@ -58,7 +76,9 @@ def push(date_str, report_md):
         else:
             print(f"[bark] 推送失败: {j}")
     except Exception as e:  # noqa: BLE001
-        print(f"[bark] 推送异常（不影响主流程）: {type(e).__name__}: {e}")
+        status = getattr(r, "status_code", "?") if "r" in dir() else "?"
+        text = getattr(r, "text", "")[:200] if "r" in dir() else ""
+        print(f"[bark] 推送异常（不影响主流程）: {type(e).__name__}: {e} | HTTP {status} | {text}")
 
 
 def main():
