@@ -34,6 +34,14 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python watchtower/main.py
 
+      - name: Push to WeChat
+        env:
+          WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
+          WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
+          WECHAT_OPENID: ${{ secrets.WECHAT_OPENID }}
+          WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
+        run: python watchtower/wechat_push.py || echo "wechat push failed (non-fatal)"
+
       - name: Commit report
         run: |
           git config user.name "watchtower-bot"

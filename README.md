@@ -32,6 +32,38 @@
 └── .env.example                       # API key 模板（复制为 .env）
 ```
 
+## 微信推送（可选，强烈建议）
+
+日报生成后，可以把「今日风向 + TOP3 机会信号」自动推到你的**个人微信**。走微信官方通道：公众号测试号 + 模板消息，免费、合规、无需第三方付费服务。
+
+**一次性申请**（约 3 分钟）：
+1. 打开 https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login 用微信扫码登录
+2. 记下页面顶部的 `appID` 和 `appsecret`
+3. 页面下方「测试号二维码」，用自己微信扫码关注 → 用户列表出现自己 → 记下 `openid`
+4. 「新增测试模板」，模板标题随意，模板内容填：
+   ```
+   瞭望塔：{{title.DATA}}
+   机会1：{{s1.DATA}}
+   机会2：{{s2.DATA}}
+   机会3：{{s3.DATA}}
+   {{note.DATA}}
+   ```
+   提交后记下 `template_id`
+
+**配置**：
+- 本地：`.env` 里填 `WECHAT_APPID / WECHAT_APPSECRET / WECHAT_OPENID / WECHAT_TEMPLATE_ID`，跑 `python watchtower/wechat_push.py`
+- 云端：GitHub 仓库 `Settings → Secrets and variables → Actions` 添加同名 4 个 Secrets（workflow 已内置推送步骤）
+
+**收到的消息长这样**：
+
+> 瞭望塔：县域消费政策+AI视频工具化成今日两大信号
+> 机会1：县域消费政策红利（高）
+> 机会2：AI 视频/电影制作工具化（高）
+> 机会3：公积金新政带动的服务需求（中）
+> 信源 11/11 正常 · 点此看完整报告
+
+点消息直达当天完整日报（GitHub 上的 Markdown 页面）。
+
 ## 本地运行
 
 ```powershell
