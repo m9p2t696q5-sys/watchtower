@@ -42,6 +42,11 @@ jobs:
           WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
         run: python watchtower/wechat_push.py || echo "wechat push failed (non-fatal)"
 
+      - name: Push to Bark (iOS)
+        env:
+          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+        run: python watchtower/bark_push.py || echo "bark push failed (non-fatal)"
+
       - name: Commit report
         run: |
           git config user.name "watchtower-bot"
