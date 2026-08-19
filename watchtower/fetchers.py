@@ -150,11 +150,26 @@ def fetch_weibo():
 # RSS 类（商业财经 / 科技 / 数字生活）
 # --------------------------------------------------------------------------
 
+def _sanitize_xml(text):
+    """清洗不规范的 XML：删非法控制字符、把裸 & 转义为 &amp;。
+
+    很多媒体 feed 生成器会产出「半合法」XML（如爱范儿正文插图 URL 里的
+    裸 &，2026-08-19 实测），严格解析直接失败，清洗后即可正常解析。
+    """
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
+    text = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)", "&amp;", text)
+    return text
+
+
 def _fetch_rss(url):
-    """通用 RSS/Atom 解析（处理 namespace）"""
+    """通用 RSS/Atom 解析（处理 namespace；对不规范 XML 自动清洗重试）"""
     r = _get(url)
     r.raise_for_status()
-    root = ET.fromstring(r.content)
+    try:
+        root = ET.fromstring(r.content)
+    except ET.ParseError:
+        cleaned = _sanitize_xml(r.content.decode("utf-8", errors="replace"))
+        root = ET.fromstring(cleaned.encode("utf-8"))
     items = []
     for node in root.iter():
         tag = node.tag.rsplit("}", 1)[-1]
