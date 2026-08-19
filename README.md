@@ -1,18 +1,32 @@
 # 瞭望塔（Watchtower）
 
-> 每天自动扫描全网热门平台，由 AI 从热榜中提炼「赚钱机会信号」，生成日报自动归档进 git。
+> 每天早晚两次自动扫描全网热门平台，由 AI 从热榜中提炼「赚钱机会信号」，生成早报/晚报自动归档进 git 并推到 iPhone。
 > 这是整个赚钱系统里唯一跑在云端的模块，其余（资金台账、日志、复盘）在线下完成。
 
 ## 它每天产出什么
 
-每次运行自动 commit 两个文件到仓库：
+每天运行两次（早报 + 晚报），每次自动 commit 两个文件到仓库：
 
 | 文件 | 内容 |
 | --- | --- |
-| `reports/YYYY-MM-DD.md` | 当日日报：信源健康表 + AI 机会报告（今日风向 / 机会信号 / 值得关注的人与产品 / 噪声提醒）+ 各平台原始榜单附录 |
-| `data/YYYY-MM-DD.json` | 当日抓取的原始结构化数据（供日后复盘分析） |
+| `reports/YYYY-MM-DD-morning.md` / `-evening.md` | 早报/晚报：信源健康表 + AI 机会报告（今日风向 / 机会信号 / 值得关注的人与产品 / 噪声提醒）+ 各平台原始榜单附录 |
+| `data/YYYY-MM-DD-morning.json` / `-evening.json` | 当日抓取的原始结构化数据（供日后复盘分析） |
+
+**推送节奏**（iPhone Bark 通知）：
+
+| 时间（北京） | 内容 |
+| --- | --- |
+| 08:30（10:00 兜底） | 早报：隔夜热点 + 上午机会信号 |
+| 20:00（22:30 兜底） | 晚报：当天热度变化 + 傍晚机会信号 |
+
+> GitHub 定时任务高峰期可能延迟，兜底时间点保证「晚收到、不会收不到」；同日同时段防重，不会重复打扰。
 
 历史报告全部留在 git 历史里，跑得越久越值钱：半年后你有一份带上下文的机会档案。
+
+## 成本
+
+- GitHub Actions：公开仓库**完全免费**
+- DeepSeek API：早报+晚报各调用一次，**每天合计约 1~3 毛钱，一个月 3~9 元**（输入按每源 12 条裁剪过，已是压缩后的量级）。开发期反复手动测试才会出现单日几块钱的情况。
 
 ## 目录结构
 
@@ -86,17 +100,20 @@ python scripts/probe_sources.py      # 只看各信源健康状态
 3. **配置 API key**（可选但强烈建议）：
    仓库页 → `Settings` → `Secrets and variables` → `Actions` → `New repository secret`：
    - Name: `DEEPSEEK_API_KEY`
-   - Value: 你的 DeepSeek key（https://platform.deepseek.com 控制台创建，`deepseek-chat` 模型每天跑一次约几分钱）
-4. **手动试跑一次**：仓库页 → `Actions` → 左侧 `Watchtower Daily` → `Run workflow`。
+   - Value: 你的 DeepSeek key（https://platform.deepseek.com 控制台创建，早晚两次调用合计每天约 1~3 毛钱）
+4. **手动试跑一次**：仓库页 → `Actions` → 左侧 `Watchtower Daily` → `Run workflow`（可指定早报/晚报）。
    跑完后仓库里应出现 `data/` 和 `reports/` 的自动 commit。
-5. **之后全自动**：每天北京时间 **08:30**（UTC 00:30）定时运行，结果自动 commit，你随时 `git pull` 收日报。
+5. **之后全自动**：每天北京时间 **08:30 早报 + 20:00 晚报**（各带一次兜底时间），结果自动 commit，你随时 `git pull` 收日报。
 
 ### 修改运行时间
 
 编辑 `.github/workflows/watchtower.yml` 的 cron 表达式（UTC 时间，北京时间 = UTC + 8）：
 ```yaml
 schedule:
-  - cron: '30 0 * * *'   # UTC 00:30 = 北京 08:30
+  - cron: '30 0 * * *'    # 早报 08:30
+  - cron: '0 2 * * *'     # 早报兜底 10:00
+  - cron: '0 12 * * *'    # 晚报 20:00
+  - cron: '30 14 * * *'   # 晚报兜底 22:30
 ```
 
 ## 信源清单（11 个）

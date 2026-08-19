@@ -1,49 +1,29 @@
-"""瞭望塔入口：抓取 → 存档 → LLM 摘要 → 渲染日报。
+"""瞭望塔入口：抓取 → 存档 → LLM 摘要 → 渲染日报（早报/晚报）。
 
 用法：
-  python watchtower/main.py            # 完整流程（有 key 则含 AI 报告）
-  python watchtower/main.py --no-llm   # 跳过 LLM，仅榜单
+  python watchtower/main.py                     # 完整流程，时段按环境/默认早报
+  python watchtower/main.py --slot evening      # 强制生成晚报
+  python watchtower/main.py --no-llm            # 跳过 LLM，仅榜单
 """
 
 import argparse
 import json
 import os
 import sys
-from datetime import datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-if str(REPO_ROOT) not in sys.path:  # 支持 python watchtower/main.py 直接运行
-    sys.path.insert(0, str(REPO_ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from watchtower import config, fetchers, render, summarize  # noqa: E402
+from watchtower.utils import REPO_ROOT, load_env, resolve_slot, today_cn  # noqa: E402
 
 
-def load_env(path=".env"):
-    """极简 .env 加载（不覆盖已存在的环境变量）。"""
-    env_file = REPO_ROOT / path
-    if not env_file.exists():
-        return
-    for line in env_file.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        k, _, v = line.partition("=")
-        k, v = k.strip(), v.strip().strip('"').strip("'")
-        if k:
-            os.environ.setdefault(k, v)
-
-
-def today_cn():
-    return datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
-
-
-def run(date_str, use_llm=True):
+def run(date_str, use_llm=True, slot="morning"):
     os.chdir(REPO_ROOT)
 
     results = []
     entries_by_source = {}
+    llm_limit = config.LLM_LIMIT_PER_SOURCE
     for src in config.SOURCES:
         fn = getattr(fetchers, src["fetcher"])
         try:
@@ -54,7 +34,8 @@ def run(date_str, use_llm=True):
             items = res["items"][: src["limit"]]
             res["items"] = items
             if items:
-                entries_by_source[src["name"]] = items
+                # 附录用全量 limit 条；LLM 输入只取前 llm_limit 条（控成本）
+                entries_by_source[src["name"]] = items[: min(llm_limit, len(items))]
         results.append({"source": src, "result": res})
         status = "OK" if res.get("ok") else "FAIL"
         print(f"[{status}] {src['name']}: {len(res.get('items', []))} 条"
@@ -64,9 +45,10 @@ def run(date_str, use_llm=True):
 
     # 原始数据存档（git 可追溯）
     (REPO_ROOT / "data").mkdir(exist_ok=True)
-    raw_path = REPO_ROOT / "data" / f"{date_str}.json"
+    raw_path = REPO_ROOT / "data" / f"{date_str}-{slot}.json"
     raw_path.write_text(
-        json.dumps({"date": date_str, "results": results}, ensure_ascii=False, indent=2),
+        json.dumps({"date": date_str, "slot": slot, "results": results},
+                   ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
@@ -78,9 +60,9 @@ def run(date_str, use_llm=True):
 
     # 渲染日报
     (REPO_ROOT / "reports").mkdir(exist_ok=True)
-    report_path = REPO_ROOT / "reports" / f"{date_str}.md"
+    report_path = REPO_ROOT / "reports" / f"{date_str}-{slot}.md"
     report_path.write_text(
-        render.render_report(date_str, results, summary_md), encoding="utf-8"
+        render.render_report(date_str, results, summary_md, slot=slot), encoding="utf-8"
     )
     print(f"[info] 报告已生成: {report_path.relative_to(REPO_ROOT)}")
     print(f"[info] 原始数据:   {raw_path.relative_to(REPO_ROOT)}")
@@ -94,10 +76,14 @@ def run(date_str, use_llm=True):
 def main():
     parser = argparse.ArgumentParser(description="瞭望塔日报生成器")
     parser.add_argument("--no-llm", action="store_true", help="跳过 LLM 摘要")
+    parser.add_argument("--slot", choices=["morning", "evening"], default=None,
+                        help="时段（默认按触发环境推断，无则早报）")
     args = parser.parse_args()
 
     load_env()
-    sys.exit(run(today_cn(), use_llm=not args.no_llm))
+    slot = resolve_slot(os.environ.get("SCHEDULE_EXPR"),
+                        args.slot or os.environ.get("DISPATCH_SLOT"))
+    sys.exit(run(today_cn(), use_llm=not args.no_llm, slot=slot))
 
 
 if __name__ == "__main__":

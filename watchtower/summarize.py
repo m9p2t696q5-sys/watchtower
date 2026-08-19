@@ -73,7 +73,7 @@ def summarize(entries_by_source, date_str, api_key=None):
                     {"role": "user", "content": user_prompt},
                 ],
                 "temperature": 0.3,
-                "max_tokens": 3500,
+                "max_tokens": 2600,
             },
             timeout=180,
         )

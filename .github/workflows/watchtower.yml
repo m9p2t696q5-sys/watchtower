@@ -2,12 +2,20 @@ name: Watchtower Daily
 
 on:
   schedule:
-    # 每天 UTC 00:30 = 北京时间 08:30
+    # 早报：UTC 00:30 = 北京时间 08:30
     - cron: '30 0 * * *'
-    # 兜底：UTC 02:00 = 北京时间 10:00（GitHub 定时任务高峰期可能延迟，
-    # 若 08:30 未跑成则此处补上；已推送过会自动跳过，不会重复打扰）
+    # 早报兜底：UTC 02:00 = 北京时间 10:00（GitHub 定时任务高峰期可能延迟）
     - cron: '0 2 * * *'
-  workflow_dispatch: {}
+    # 晚报：UTC 12:00 = 北京时间 20:00
+    - cron: '0 12 * * *'
+    # 晚报兜底：UTC 14:30 = 北京时间 22:30
+    - cron: '30 14 * * *'
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '推送时段：morning 早报 / evening 晚报'
+        required: false
+        default: 'morning'
 
 permissions:
   contents: write
@@ -35,6 +43,8 @@ jobs:
       - name: Run watchtower
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SCHEDULE_EXPR: ${{ github.event.schedule }}
+          DISPATCH_SLOT: ${{ inputs.slot }}
         run: python watchtower/main.py
 
       # 微信推送已按用户要求停用（2026-08-19）。
@@ -50,6 +60,8 @@ jobs:
       - name: Push to Bark (iOS)
         env:
           BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+          SCHEDULE_EXPR: ${{ github.event.schedule }}
+          DISPATCH_SLOT: ${{ inputs.slot }}
         run: python watchtower/bark_push.py || echo "bark push failed (non-fatal)"
 
       - name: Commit report

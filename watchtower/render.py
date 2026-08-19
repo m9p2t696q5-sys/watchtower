@@ -1,5 +1,7 @@
 """把抓取结果 + LLM 摘要渲染成每日 Markdown 报告。"""
 
+from watchtower.utils import slot_name
+
 
 def _render_health_table(results):
     lines = ["| 信源 | 类别 | 状态 | 条数 / 说明 |", "| --- | --- | --- | --- |"]
@@ -42,10 +44,10 @@ def _render_appendix(results):
     return "\n".join(lines)
 
 
-def render_report(date_str, results, summary_md):
+def render_report(date_str, results, summary_md, slot="morning"):
     ok_count = sum(1 for r in results if r["result"].get("ok"))
     lines = [
-        f"# 瞭望塔日报 · {date_str}",
+        f"# 瞭望塔{slot_name(slot)} · {date_str}",
         "",
         f"> 信源 {ok_count}/{len(results)} 正常 · 由 GitHub Actions 自动生成 · 供线下复盘使用",
         "",

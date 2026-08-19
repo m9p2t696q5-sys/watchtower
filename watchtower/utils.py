@@ -29,7 +29,28 @@ def today_cn():
     return datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
 
 
-def repo_report_url(date_str, env_override="WATCHTOWER_REPO_URL"):
+# 时段（slot）相关：早报 morning / 晚报 evening
+SLOT_NAMES = {"morning": "早报", "evening": "晚报"}
+EVENING_CRONS = ("0 12 * * *", "30 14 * * *")  # 晚报 20:30 与晚报兜底 22:30（UTC）
+
+
+def resolve_slot(schedule_expr=None, dispatch_slot=None):
+    """根据触发方式判断本次是早报还是晚报。
+
+    优先级：手动触发指定的 slot > schedule 表达式匹配 > 默认 morning。
+    """
+    if dispatch_slot and dispatch_slot.strip().lower() in SLOT_NAMES:
+        return dispatch_slot.strip().lower()
+    if schedule_expr and schedule_expr.strip() in EVENING_CRONS:
+        return "evening"
+    return "morning"
+
+
+def slot_name(slot):
+    return SLOT_NAMES.get(slot, "日报")
+
+
+def repo_report_url(date_str, slot=None, env_override="WATCHTOWER_REPO_URL"):
     """拼出当天报告的 GitHub 链接（供推送点击跳转）。"""
     base = os.environ.get(env_override, "")
     if not base:
@@ -45,4 +66,5 @@ def repo_report_url(date_str, env_override="WATCHTOWER_REPO_URL"):
             base = ""
     if not base:
         return ""
-    return f"{base}/blob/main/reports/{date_str}.md"
+    filename = f"{date_str}-{slot}.md" if slot else f"{date_str}.md"
+    return f"{base}/blob/main/reports/{filename}"

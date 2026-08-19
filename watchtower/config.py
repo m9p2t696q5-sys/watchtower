@@ -1,8 +1,12 @@
 """瞭望塔信源配置（表驱动）。
 
 新增/删减信源只需改 SOURCES 列表，并在 fetchers.py 中实现对应 fetcher 函数。
-limit = 进入 LLM 摘要和报告附录的最大条目数。
+limit = 进入报告附录的最大条目数。
 """
+
+# 进入 LLM 摘要的每信源条目上限（低于 limit，用于控制 API 成本；
+# 报告附录仍展示全量 limit 条，不影响信息完整性）
+LLM_LIMIT_PER_SOURCE = 12
 
 SOURCES = [
     {
