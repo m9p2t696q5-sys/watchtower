@@ -37,6 +37,8 @@ def _render_appendix(results):
         lines.append("| --- | --- | --- |")
         for it in items:
             title = it["title"].replace("|", "｜")
+            if it.get("zh"):
+                title = f"{it['zh']}（{title}）"
             heat = (it.get("heat") or "").replace("|", "｜")
             url = it.get("url") or ""
             lines.append(f"| {title} | {heat} | [链接]({url}) |")

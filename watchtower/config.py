@@ -88,6 +88,7 @@ SOURCES = [
         "fetcher": "fetch_hn",
         "limit": 15,
         "note": "官方公开 API",
+        "lang": "en",
     },
     {
         "id": "github_trending",
@@ -96,5 +97,6 @@ SOURCES = [
         "fetcher": "fetch_github_trending",
         "limit": 15,
         "note": "HTML 解析；大陆网络可能不通，Actions 云端正常",
+        "lang": "en",
     },
 ]

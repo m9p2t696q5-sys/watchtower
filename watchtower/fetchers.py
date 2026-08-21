@@ -40,6 +40,34 @@ def _quote(s):
     return urllib.parse.quote(s or "")
 
 
+def fetch_page_desc(url, max_len=200):
+    """抓取网页的 meta description 作为热点背景简介（供 LLM 理解事件）。
+
+    超时 / 非 200 / 无 description 一律返回空字符串，绝不抛出异常——
+    背景是锦上添花，绝不允许它拖垮主流程。
+    """
+    if not url or not url.startswith("http"):
+        return ""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=(5, 8))
+        if r.status_code != 200:
+            return ""
+        text = r.text
+        patterns = (
+            r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']description["\']',
+            r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)',
+        )
+        for pat in patterns:
+            m = re.search(pat, text, re.I)
+            if m:
+                desc = html_mod.unescape(m.group(1)).strip()
+                return desc[:max_len]
+    except Exception:  # noqa: BLE001
+        pass
+    return ""
+
+
 # --------------------------------------------------------------------------
 # 中文舆论 / 流量
 # --------------------------------------------------------------------------

@@ -10,12 +10,49 @@ import argparse
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from watchtower import config, fetchers, render, summarize  # noqa: E402
 from watchtower.utils import REPO_ROOT, load_env, resolve_slot, today_cn  # noqa: E402
+
+
+def enrich_background(entries_by_source, top_n=2):
+    """每源 top N 条热点抓取网页 meta description 作为背景（并发、静默降级）。"""
+    tasks = []
+    for items in entries_by_source.values():
+        for it in items[:top_n]:
+            if not it.get("desc") and it.get("url"):
+                tasks.append(it)
+    if not tasks:
+        return
+    print(f"[info] 抓取 {len(tasks)} 条热点背景简介 ...")
+
+    def work(it):
+        it["desc"] = fetchers.fetch_page_desc(it["url"])
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        list(ex.map(work, tasks))
+
+
+def translate_english(entries_by_source):
+    """对标记为英文的信源标题批量翻译，结果写回条目的 zh 字段。"""
+    titles = []
+    for src in config.SOURCES:
+        if src.get("lang") == "en":
+            for it in entries_by_source.get(src["name"], []):
+                if it["title"] and not it.get("zh"):
+                    titles.append(it["title"])
+    if not titles:
+        return
+    print(f"[info] 翻译 {len(titles)} 条英文标题 ...")
+    zh_map = summarize.translate_titles(titles)
+    for items in entries_by_source.values():
+        for it in items:
+            if not it.get("zh") and it["title"] in zh_map:
+                it["zh"] = zh_map[it["title"]]
 
 
 def run(date_str, use_llm=True, slot="morning"):
@@ -43,6 +80,11 @@ def run(date_str, use_llm=True, slot="morning"):
 
     ok_count = sum(1 for r in results if r["result"].get("ok"))
 
+    # 背景浅读 + 英文标题翻译（可选增强，失败静默降级，不影响主流程）
+    if entries_by_source:
+        enrich_background(entries_by_source)
+        translate_english(entries_by_source)
+
     # 原始数据存档（git 可追溯）
     (REPO_ROOT / "data").mkdir(exist_ok=True)
     raw_path = REPO_ROOT / "data" / f"{date_str}-{slot}.json"
@@ -55,7 +97,7 @@ def run(date_str, use_llm=True, slot="morning"):
     # LLM 摘要（有内容且允许时）
     summary_md = None
     if use_llm and entries_by_source:
-        print("[info] 调用 DeepSeek 生成机会报告 ...")
+        print("[info] 调用 DeepSeek 生成报告 ...")
         summary_md = summarize.summarize(entries_by_source, date_str)
 
     # 渲染日报
