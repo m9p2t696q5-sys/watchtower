@@ -43,10 +43,10 @@ THEME = {
     "accent": "#f5b942",
     "accent_soft": "rgba(245,185,66,0.14)",
     "text": "#e9eef8",
-    "sub": "#8fa3c0",
+    "sub": "#a9bad6",
     "line": "#24334f",
     "badge_bg": "rgba(245,185,66,0.15)",
-    "badge_text": "#f5c76a",
+    "badge_text": "#ffd98a",
 }
 
 FONT = '"PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif'
@@ -127,7 +127,7 @@ def _css(ratio, watermark):
       font-family:{FONT};
       display:flex; flex-direction:column;
     }}
-    .wrap {{ width:100%; height:100%; padding:{pad}px; display:flex; flex-direction:column; }}
+    .wrap {{ width:100%; height:100%; padding:{int(w*0.095)}px; display:flex; flex-direction:column; }}
     .header {{ display:flex; justify-content:space-between; align-items:baseline;
       border-bottom:2px solid {THEME['line']}; padding-bottom:18px; margin-bottom:34px; }}
     .header .kicker {{ color:{THEME['accent']}; font-size:26px; letter-spacing:4px; font-weight:600; }}
@@ -136,44 +136,46 @@ def _css(ratio, watermark):
       color:{THEME['sub']}; font-size:19px; padding-top:18px;
       border-top:1px solid {THEME['line']}; }}
     .watermark {{ opacity:.55; }}
-    h1.cover-title {{ font-size:118px; line-height:1.15; font-weight:800;
-      margin:26px 0 10px; }}
+    h1.cover-title {{ line-height:1.08; font-weight:800; margin:26px 0 10px; }}
+    .cover-title .big {{ font-size:116px; letter-spacing:2px; }}
+    .cover-title .small {{ font-size:86px; color:{THEME['accent']}; letter-spacing:10px; }}
     .date-range {{ color:{THEME['accent']}; font-size:30px; letter-spacing:2px; font-weight:600; }}
-    .cover-sub {{ color:{THEME['sub']}; font-size:27px; margin-top:14px; line-height:1.6; }}
-    .chips {{ display:flex; flex-wrap:wrap; gap:16px; margin-top:40px; }}
-    .chip {{ background:{THEME['accent_soft']}; color:{THEME['badge_text']};
-      border:1px solid rgba(245,185,66,.35); border-radius:999px;
-      padding:12px 28px; font-size:25px; font-weight:600; }}
+    .cover-sub {{ color:{THEME['sub']}; font-size:27px; margin-top:14px; line-height:1.7; }}
+    .chips {{ display:flex; flex-wrap:wrap; gap:18px; margin-top:40px; }}
+    .chip {{ background:rgba(255,255,255,0.08); color:{THEME['badge_text']};
+      border:1px solid rgba(245,200,60,0.55); border-radius:999px;
+      padding:15px 34px; font-size:27px; font-weight:600; }}
     .toc {{ margin-top:52px; background:{THEME['card']}; border:1px solid {THEME['line']};
-      border-radius:22px; padding:34px 40px; }}
-    .toc .row {{ display:flex; justify-content:space-between; font-size:26px;
-      color:{THEME['sub']}; padding:12px 0; border-bottom:1px dashed {THEME['line']}; }}
+      border-radius:22px; padding:38px 46px; }}
+    .toc .row {{ display:flex; justify-content:space-between; align-items:center;
+      font-size:27px; color:{THEME['sub']}; padding:15px 0; line-height:1.8;
+      border-bottom:1px dashed {THEME['line']}; }}
     .toc .row:last-child {{ border-bottom:none; }}
-    .toc .row b {{ color:{THEME['text']}; font-weight:600; }}
-    .item {{ margin-bottom:36px; }}
+    .toc .row b {{ color:{THEME['text']}; font-weight:700; font-size:44px; }}
+    .item {{ margin-bottom:46px; }}
     .item .idx {{ display:inline-block; color:{THEME['accent']}; font-size:44px;
       font-weight:800; margin-right:16px; }}
-    .item .t {{ font-size:33px; font-weight:700; line-height:1.5; }}
-    .item .b {{ color:{THEME['sub']}; font-size:25px; line-height:1.85; margin-top:10px; }}
+    .item .t {{ font-size:34px; font-weight:700; line-height:1.55; }}
+    .item .b {{ color:{THEME['sub']}; font-size:28px; line-height:1.9; margin-top:14px; }}
     .sig {{ background:{THEME['card']}; border:1px solid {THEME['line']};
-      border-radius:20px; padding:28px 34px; margin-bottom:26px; }}
+      border-radius:20px; padding:32px 40px; margin-bottom:32px; }}
     .sig .badge {{ display:inline-block; background:{THEME['badge_bg']};
-      color:{THEME['badge_text']}; border-radius:999px; padding:6px 20px;
-      font-size:21px; font-weight:700; margin-bottom:14px; }}
-    .sig .t {{ font-size:29px; font-weight:700; line-height:1.5; }}
-    .sig .b {{ color:{THEME['sub']}; font-size:24px; line-height:1.8; margin-top:10px; }}
-    .rem {{ margin-bottom:30px; }}
-    .rem .t {{ font-size:30px; font-weight:700; line-height:1.5; }}
-    .rem .n {{ color:{THEME['sub']}; font-size:23px; line-height:1.75; margin-top:8px; }}
-    .rem .src {{ color:{THEME['accent']}; font-size:20px; margin-top:6px; }}
+      color:{THEME['badge_text']}; border-radius:999px; padding:7px 24px;
+      font-size:22px; font-weight:700; margin-bottom:16px; }}
+    .sig .t {{ font-size:30px; font-weight:700; line-height:1.55; }}
+    .sig .b {{ color:{THEME['sub']}; font-size:27px; line-height:1.9; margin-top:14px; }}
+    .rem {{ margin-bottom:36px; }}
+    .rem .t {{ font-size:31px; font-weight:700; line-height:1.55; }}
+    .rem .n {{ color:{THEME['sub']}; font-size:26px; line-height:1.85; margin-top:12px; }}
+    .rem .src {{ color:{THEME['accent']}; font-size:21px; margin-top:10px; }}
     .out {{ background:{THEME['card']}; border-left:6px solid {THEME['accent']};
-      border-radius:0 18px 18px 0; padding:26px 32px; margin-bottom:24px; }}
-    .out .t {{ font-size:28px; font-weight:700; margin-bottom:8px; }}
-    .out .b {{ color:{THEME['sub']}; font-size:24px; line-height:1.8; }}
-    .summ {{ background:{THEME['card2']}; border-radius:20px; padding:30px 36px; }}
+      border-radius:0 18px 18px 0; padding:30px 38px; margin-bottom:28px; }}
+    .out .t {{ font-size:29px; font-weight:700; margin-bottom:12px; }}
+    .out .b {{ color:{THEME['sub']}; font-size:27px; line-height:1.9; }}
+    .summ {{ background:{THEME['card2']}; border-radius:20px; padding:34px 40px; }}
     .summ .label {{ color:{THEME['accent']}; font-size:23px; font-weight:700;
-      letter-spacing:3px; margin-bottom:12px; }}
-    .summ p {{ color:{THEME['text']}; font-size:26px; line-height:1.9; }}
+      letter-spacing:3px; margin-bottom:14px; }}
+    .summ p {{ color:{THEME['text']}; font-size:26px; line-height:1.95; }}
     """
 
 
@@ -207,7 +209,7 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
     cards = []
 
     # 1. 封面
-    keywords = [re.sub(r"[「」]", "", t["title"]).strip() for t in trends[:3] if t.get("title")]
+    keywords = [re.sub(r"[「」]", "", t["title"]).strip() for t in trends[:2] if t.get("title")]
     try:
         week_no = date.fromisoformat(monday).isocalendar()[1]
     except Exception:  # noqa: BLE001
@@ -223,10 +225,10 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
         toc_rows.append(("下周看点", f"{len(outlooks)} 条"))
     toc = "".join(f'<div class="row"><span>{k}</span><b>{v}</b></div>' for k, v in toc_rows)
     inner = f"""
-<h1 class="cover-title">瞭望塔<br>周报</h1>
+<h1 class="cover-title"><span class="big">瞭望塔</span><br><span class="small">周 报</span></h1>
 <div class="date-range">{monday} — {sunday}</div>
 <div class="cover-sub">全网热榜 · AI 趋势分析 · 一周速览<br>深蓝情报台 · 第 {week_no} 周</div>
-<div class="chips">{''.join(f'<span class="chip">{_truncate(k, 10)}</span>' for k in keywords)}</div>
+<div class="chips">{''.join(f'<span class="chip">{_truncate(k, 6)}</span>' for k in keywords)}</div>
 <div class="toc">{toc}</div>"""
     cards.append(("01_封面", inner))
 
