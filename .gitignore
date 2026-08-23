@@ -10,3 +10,6 @@ venv/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 卡片输出（大图片不进 git）
+tools/weekly_cards/output/
