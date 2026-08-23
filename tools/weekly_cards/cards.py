@@ -141,12 +141,15 @@ def _css(ratio, watermark):
     .cover-title .small {{ font-size:86px; color:{THEME['accent']}; letter-spacing:10px; }}
     .date-range {{ color:{THEME['accent']}; font-size:30px; letter-spacing:2px; font-weight:600; }}
     .cover-sub {{ color:{THEME['sub']}; font-size:27px; margin-top:14px; line-height:1.7; }}
-    .chips {{ display:flex; flex-wrap:wrap; gap:18px; margin-top:40px; }}
-    .chip {{ background:rgba(255,255,255,0.08); color:{THEME['badge_text']};
-      border:1px solid rgba(245,200,60,0.55); border-radius:999px;
-      padding:15px 34px; font-size:27px; font-weight:600; }}
-    .toc {{ margin-top:52px; background:{THEME['card']}; border:1px solid {THEME['line']};
+    .chips {{ display:flex; flex-wrap:wrap; gap:18px; margin-top:36px; }}
+    .chip {{ background:rgba(255,255,255,0.11); color:{THEME['badge_text']};
+      border:1px solid rgba(245,200,60,0.6); border-radius:999px;
+      padding:14px 32px; font-size:24px; font-weight:600; line-height:1.5;
+      word-break:break-all; max-width:100%; }}
+    .toc {{ margin-top:48px; background:{THEME['card']}; border:1px solid {THEME['line']};
       border-radius:22px; padding:38px 46px; }}
+    .toc .toc-label {{ color:{THEME['sub']}; font-size:24px; font-weight:600;
+      letter-spacing:4px; margin-bottom:6px; }}
     .toc .row {{ display:flex; justify-content:space-between; align-items:center;
       font-size:27px; color:{THEME['sub']}; padding:15px 0; line-height:1.8;
       border-bottom:1px dashed {THEME['line']}; }}
@@ -209,7 +212,7 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
     cards = []
 
     # 1. 封面
-    keywords = [re.sub(r"[「」]", "", t["title"]).strip() for t in trends[:2] if t.get("title")]
+    keywords = [re.sub(r"[「」《》]", "", t["title"]).strip() for t in trends[:2] if t.get("title")]
     try:
         week_no = date.fromisoformat(monday).isocalendar()[1]
     except Exception:  # noqa: BLE001
@@ -228,8 +231,8 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
 <h1 class="cover-title"><span class="big">瞭望塔</span><br><span class="small">周 报</span></h1>
 <div class="date-range">{monday} — {sunday}</div>
 <div class="cover-sub">全网热榜 · AI 趋势分析 · 一周速览<br>深蓝情报台 · 第 {week_no} 周</div>
-<div class="chips">{''.join(f'<span class="chip">{_truncate(k, 6)}</span>' for k in keywords)}</div>
-<div class="toc">{toc}</div>"""
+<div class="chips">{''.join(f'<span class="chip">{k}</span>' for k in keywords)}</div>
+<div class="toc"><div class="toc-label">本期看点</div>{toc}</div>"""
     cards.append(("01_封面", inner))
 
     # 2. 核心趋势
@@ -247,7 +250,7 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
         rows = ""
         for t in page:
             title = t["title"] or "信号"
-            m = re.search(r"出现\s*(\d+)\s*天", title)
+            m = re.search(r"连续\s*(\d+)\s*天", title) or re.search(r"出现\s*(\d+)\s*天", title)
             days = f"出现 {m.group(1)} 天" if m else "反复出现"
             rows += (f'<div class="sig"><span class="badge">{days}</span>'
                      f'<div class="t">{title}</div>'
