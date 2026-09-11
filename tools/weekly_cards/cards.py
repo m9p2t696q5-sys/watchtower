@@ -67,37 +67,43 @@ def _cut_section(md, name):
 
 
 def _split_bold_items(text):
-    """解析「**标题** + 段落」形式的条目，返回 [(title, body)]。"""
+    """解析条目，兼容三种写法（LLM 输出格式会漂移，这里都吃）：
+
+      '- **标题**：正文'   （列表前缀 + 粗体标题）
+      '**标题**：正文'     （裸粗体标题）
+      '- 纯文本一行'       （无粗体时的整行条目）
+
+    返回 [{"title": str, "body": str}]；不带列表前缀的普通行视为上一条的续行。
+    """
     items = []
     cur = None
     for raw in text.splitlines():
         line = raw.strip()
         if not line:
             continue
+        is_bullet = bool(re.match(r"^[-•]\s+", line))
+        if is_bullet:
+            line = re.sub(r"^[-•]\s+", "", line)
         m = re.match(r"^\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$", line)
         if m:
             title = re.sub(r"^\d+[.、]\s*", "", m.group(1)).strip()
             cur = {"title": title, "body": m.group(2).strip()}
             items.append(cur)
-        elif cur is not None:
+        elif is_bullet or cur is None:
+            cur = {"title": "", "body": line}
+            items.append(cur)
+        else:
             cur["body"] = (cur["body"] + " " + line).strip()
-    # 无 ** 结构时整段作为一条
     if not items and text.strip():
         items.append({"title": "", "body": text.strip()})
     return items
-
-
-def _split_list_items(text):
-    """解析 '- xxx' 列表，返回 [str]。"""
-    return [re.sub(r"^\s*[-•]\s*", "", l).strip() for l in text.splitlines()
-            if re.match(r"^\s*[-•]\s+", l)]
 
 
 def parse_weekly(md):
     """周报 markdown → 结构化数据。"""
     trends = _split_bold_items(_cut_section(md, "本周核心趋势"))
     signals = _split_bold_items(_cut_section(md, "连续出现的信号"))
-    outlooks = _split_list_items(_cut_section(md, "下周看点"))
+    outlooks = _split_bold_items(_cut_section(md, "下周看点"))
     summary = _cut_section(md, "本周社会观察小结").strip()
 
     remembers = []
@@ -127,7 +133,7 @@ def _css(ratio, watermark):
       font-family:{FONT};
       display:flex; flex-direction:column;
     }}
-    .wrap {{ width:100%; height:100%; padding:{int(w*0.095)}px; display:flex; flex-direction:column; }}
+    .wrap {{ width:100%; height:100%; padding:{int(w*0.088)}px; display:flex; flex-direction:column; }}
     .header {{ display:flex; justify-content:space-between; align-items:baseline;
       border-bottom:2px solid {THEME['line']}; padding-bottom:18px; margin-bottom:34px; }}
     .header .kicker {{ color:{THEME['accent']}; font-size:26px; letter-spacing:4px; font-weight:600; }}
@@ -155,13 +161,13 @@ def _css(ratio, watermark):
       border-bottom:1px dashed {THEME['line']}; }}
     .toc .row:last-child {{ border-bottom:none; }}
     .toc .row b {{ color:{THEME['text']}; font-weight:700; font-size:44px; }}
-    .item {{ margin-bottom:46px; }}
+    .item {{ margin-bottom:40px; }}
     .item .idx {{ display:inline-block; color:{THEME['accent']}; font-size:44px;
       font-weight:800; margin-right:16px; }}
     .item .t {{ font-size:34px; font-weight:700; line-height:1.55; }}
     .item .b {{ color:{THEME['sub']}; font-size:28px; line-height:1.9; margin-top:14px; }}
     .sig {{ background:{THEME['card']}; border:1px solid {THEME['line']};
-      border-radius:20px; padding:32px 40px; margin-bottom:32px; }}
+      border-radius:20px; padding:28px 36px; margin-bottom:26px; }}
     .sig .badge {{ display:inline-block; background:{THEME['badge_bg']};
       color:{THEME['badge_text']}; border-radius:999px; padding:7px 24px;
       font-size:22px; font-weight:700; margin-bottom:16px; }}
@@ -172,9 +178,9 @@ def _css(ratio, watermark):
     .rem .n {{ color:{THEME['sub']}; font-size:26px; line-height:1.85; margin-top:12px; }}
     .rem .src {{ color:{THEME['accent']}; font-size:21px; margin-top:10px; }}
     .out {{ background:{THEME['card']}; border-left:6px solid {THEME['accent']};
-      border-radius:0 18px 18px 0; padding:30px 38px; margin-bottom:28px; }}
+      border-radius:0 18px 18px 0; padding:28px 38px; margin-bottom:20px; }}
     .out .t {{ font-size:29px; font-weight:700; margin-bottom:12px; }}
-    .out .b {{ color:{THEME['sub']}; font-size:27px; line-height:1.9; }}
+    .out .b {{ color:{THEME['sub']}; font-size:26px; line-height:1.9; }}
     .summ {{ background:{THEME['card2']}; border-radius:20px; padding:34px 40px; }}
     .summ .label {{ color:{THEME['accent']}; font-size:23px; font-weight:700;
       letter-spacing:3px; margin-bottom:14px; }}
@@ -204,9 +210,9 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
         data["trends"], data["signals"], data["remembers"],
         data["outlooks"], data["summary"])
 
-    # 分页
+    # 分页（每页条数经溢出检测校准：信号卡内容最长，每页 3 条）
     trend_pages = [trends[i:i + 3] for i in range(0, max(len(trends), 1), 3)] or [[]]
-    sig_pages = [signals[i:i + 4] for i in range(0, max(len(signals), 1), 4)] or [[]]
+    sig_pages = [signals[i:i + 3] for i in range(0, max(len(signals), 1), 3)] or [[]]
     rem_pages = [remembers[i:i + 4] for i in range(0, max(len(remembers), 1), 4)] or [[]]
 
     cards = []
@@ -254,7 +260,7 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
             days = f"出现 {m.group(1)} 天" if m else "反复出现"
             rows += (f'<div class="sig"><span class="badge">{days}</span>'
                      f'<div class="t">{title}</div>'
-                     f'<div class="b">{_truncate(t["body"], 200)}</div></div>')
+                     f'<div class="b">{_truncate(t["body"], 165)}</div></div>')
         cards.append((f"03_连续信号_{pi + 1}", rows))
 
     # 4. 值得记住
@@ -270,23 +276,20 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
     # 5. 下周看点 + 社会观察小结
     outs = ""
     for o in outlooks:
-        m = re.match(r"^\*{1,2}([^*]+?)\*{1,2}\s*[:：]?\s*(.*)$", o)
-        if m:
-            outs += (f'<div class="out"><div class="t">{m.group(1).strip()}</div>'
-                     f'<div class="b">{_truncate(m.group(2).strip(), 150)}</div></div>')
-        else:
-            outs += f'<div class="out"><div class="t">看点</div><div class="b">{_truncate(o, 150)}</div></div>'
+        title = o["title"] or "看点"
+        outs += (f'<div class="out"><div class="t">{title}</div>'
+                 f'<div class="b">{_truncate(o["body"], 150)}</div></div>')
     summ = ""
     if summary:
         summ = (f'<div class="summ"><div class="label">社会观察小结</div>'
-                f'<p>{_truncate(summary, 260)}</p></div>')
+                f'<p>{_truncate(summary, 240)}</p></div>')
     cards.append((f"05_看点与小结_1", outs + summ))
 
     total = len(cards)
     out = []
     for i, (name, inner) in enumerate(cards):
         kicker_map = {"01": "瞭望塔周报", "02": "本周核心趋势", "03": "连续出现的信号",
-                      "04": "值得记住", "05": "下周看点"}
+                      "04": "值得记住", "05": "下周看点" if outlooks else "社会观察小结"}
         prefix = name.split("_")[0]
         kicker = kicker_map.get(prefix, "瞭望塔周报")
         out.append((f"{name}.png",
@@ -302,12 +305,21 @@ def build_cards(data, monday, sunday, ratio_key, watermark):
 def render(cards, ratio, out_dir):
     w, h = ratio["w"], ratio["h"]
     out_dir.mkdir(parents=True, exist_ok=True)
+    overflow = []
     with sync_playwright() as p:
         browser = p.chromium.launch()
         for name, html in cards:
             page = browser.new_page(
                 viewport={"width": w, "height": h}, device_scale_factor=2)
             page.set_content(html, wait_until="load")
+            # 溢出检测：内容实际高度超过卡片高度时底部会被裁切（静默丢内容）
+            box = page.evaluate(
+                "() => { const el = document.querySelector('.wrap');"
+                " return { content: el.scrollHeight, box: el.clientHeight }; }")
+            over = box["content"] - box["box"]
+            if over > 2:
+                overflow.append((name, over))
+                print(f"[WARN] {name} 内容溢出 {over}px —— 底部内容会被裁切！")
             path = out_dir / name
             page.screenshot(path=str(path),
                             clip={"x": 0, "y": 0, "width": w, "height": h})
@@ -315,6 +327,9 @@ def render(cards, ratio, out_dir):
             kb = path.stat().st_size // 1024
             print(f"[OK] {name} ({kb} KB)")
         browser.close()
+    if overflow:
+        print(f"\n[警告] {len(overflow)} 张卡片内容溢出，需要减少每页条目数或精简文案")
+    return overflow
 
 
 # --------------------------------------------------------------------------
