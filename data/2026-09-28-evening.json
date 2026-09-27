@@ -1,0 +1,1242 @@
+{
+  "date": "2026-09-28",
+  "slot": "evening",
+  "results": [
+    {
+      "source": {
+        "id": "zhihu",
+        "name": "知乎热榜",
+        "category": "中文舆论风向",
+        "fetcher": "fetch_zhihu",
+        "limit": 20,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "亚运会乒乓球男双决赛，林诗栋/黄友政 4-2 张本智和/篠塚大登，获男双金牌，如何评价本场比赛？",
+            "url": "https://www.zhihu.com/question/2087560514792419879",
+            "heat": "1725 万热度",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "亚运会女子标枪决赛，严子怡夺金，投出 70 米 46 刷新亚运纪录，如何评价她的个人表现以及本场比赛？",
+            "url": "https://www.zhihu.com/question/2087637427082851450",
+            "heat": "534 万热度",
+            "extra": "刷新亚运会纪录！严子怡夺得田径女子标枪金牌更多资讯请下载央视新闻客户端",
+            "desc": ""
+          },
+          {
+            "title": "一技校101名毕业生入职北大，学生一般大二就被预订，主要去实验室做科研助手，这是一种怎样的职业路径？",
+            "url": "https://www.zhihu.com/question/2087469941116990453",
+            "heat": "509 万热度",
+            "extra": "“我们的学生虽然没考上北大清华，但他们能去北大清华工作。”河南一所技校绝活亮相世界技能大赛舞台，老师告诉记者，该校专业全国唯一（电子显微镜技术专业），学生在读大学二年级时就被企业预订，累计有101名毕业生入职北京大学。河南一技校绝活亮相世界"
+          },
+          {
+            "title": "交强险2025年经营亏损230亿元，3.86亿辆机动车参保，赔付支出2524亿元，哪些信息值得关注？",
+            "url": "https://www.zhihu.com/question/2087512663706133685",
+            "heat": "458 万热度",
+            "extra": "2025年度交强险经营成绩单出炉。 9月24日，金融监管总局公布的信息显示，2025年，交强险覆盖范围进一步扩大，参保机动车数量达3.86亿辆，同比增长3.8%。其中，汽车参保数量共计3.47亿辆，同比增长3.9%。 2025年交强险经营亏"
+          },
+          {
+            "title": "亚运会女子 100 米栏决赛，福部真子夺冠，吴艳妮铜牌，如何评价她们的表现和本场比赛？",
+            "url": "https://www.zhihu.com/question/2087541086738540004",
+            "heat": "328 万热度",
+            "extra": "亚运会田径项目女子100米栏决赛，福部真子12秒74夺冠，中岛瞳12秒78亚军，吴艳妮13秒12获得铜牌，林雨薇13秒47排名第七。 ​​​​"
+          },
+          {
+            "title": "中美达成八点成果共识，达成「300亿美元」对等降税安排，哪些信息值得重点关注？",
+            "url": "https://www.zhihu.com/question/2087214676530525535",
+            "heat": "325 万热度",
+            "extra": "两国元首就中美建设性战略稳定关系及重大国际地区问题深入交换意见，达成八点成果共识，包括： 一、双方同意构建“基于尊重、公平、对等的中美建设性战略稳定关系”。 二、双方同意相互支持对方办好亚太经合组织（APEC）领导人非正式会议和二十国集团（"
+          },
+          {
+            "title": "小米18系列硬件防窥屏线下实测被指可视角度差、侧看偏色，这是翻车了吗？是硬件方案固有缺陷还是调校问题？",
+            "url": "https://www.zhihu.com/question/2086829341468577823",
+            "heat": "316 万热度",
+            "extra": "不开防窥的情况下，和上代17Ultra可视角度差异如图 并且正面观感也并不好，上下小角度倾斜屏幕直接变阴阳屏，磨砂屏不通透，非常影响使用体验[无聊] 并且防窥效果也很差，开了侧看只是亮度低一点，该看到一样还是能看到，防窥了个寂寞—— 转自A"
+          },
+          {
+            "title": "刘欢在中国乐坛的地位是怎样的？",
+            "url": "https://www.zhihu.com/question/20404153",
+            "heat": "303 万热度",
+            "extra": ""
+          },
+          {
+            "title": "亚运会女子 200 米决赛，陈妤颉摘得银牌，如何评价本场比赛和她的表现？",
+            "url": "https://www.zhihu.com/question/2087540791207879476",
+            "heat": "286 万热度",
+            "extra": "更多资讯请下载央视新闻客户端"
+          },
+          {
+            "title": "子弹连钢板都能打穿，为何打不穿麻沙袋？这是什么原理？",
+            "url": "https://www.zhihu.com/question/2086150926117750541",
+            "heat": "283 万热度",
+            "extra": ""
+          },
+          {
+            "title": "26-27乒乓球德甲联赛，樊振东 3:0 格拉尔多，如何评价本场比赛？",
+            "url": "https://www.zhihu.com/question/2087653538654589356",
+            "heat": "274 万热度",
+            "extra": ""
+          },
+          {
+            "title": "为什么中文里堂兄弟姐妹和表兄弟姐妹要分开称呼？",
+            "url": "https://www.zhihu.com/question/2086786098823443178",
+            "heat": "206 万热度",
+            "extra": ""
+          },
+          {
+            "title": "汶颂亚运男子 200 米夺冠，成绩 19.88 秒追平谢震业亚洲纪录，如何评价他的表现？",
+            "url": "https://www.zhihu.com/question/2087613161595564589",
+            "heat": "186 万热度",
+            "extra": ""
+          },
+          {
+            "title": "有没有一种可能，岳不群才是《笑傲江湖》里最想“救”华山派的人，而令狐冲其实是个不负责任的“败家子”？",
+            "url": "https://www.zhihu.com/question/2010306330083229755",
+            "heat": "172 万热度",
+            "extra": "站在CEO（岳不群）的角度，公司都要倒闭了，为了上市（五岳合并）用点黑手段怎么了？ 而核心员工（令狐冲）整天跟竞争对手（魔教）喝酒，还不听指挥。"
+          },
+          {
+            "title": "交个朋友直播间被曝卖病死鱼，罗永浩连发 16 条内容辟谣，具体是怎么回事？",
+            "url": "https://www.zhihu.com/question/2086823700276277732",
+            "heat": "167 万热度",
+            "extra": "9月25日消息，近日，网传罗永浩旗下“交个朋友”直播间被曝售卖49.9元5斤一共14条的超低价多宝鱼，核算下来单条包邮价仅3.5元，有水产从业者公开质疑这批多宝鱼有可能是病死鱼。 水产博主“渔老板钓鱼”就此发布博文提出多项质疑。 博主表示，"
+          },
+          {
+            "title": "乒乓解说员高菡被指偏向性明显、情绪烘托过多，客观评价她的解说能力如何？不偏袒、中立的解说员应是怎样的？",
+            "url": "https://www.zhihu.com/question/2087618421017899157",
+            "heat": "154 万热度",
+            "extra": "网友： 解说席有个人欣赏，但国家级赛事直播，中立是底线。 全运会国乒队内对决，高菡搭档李晓霞解说，两人观点节奏差异明显，一句“我们扳回一分”，也让不少观众对解说立场产生讨论。 观众看直播，期待的是局势分析与战术解读，而非情绪烘托。解说可以偏"
+          },
+          {
+            "title": "大熊猫「平平」「福双」平安到达美国亚特兰大动物园，对中美两国有哪些意义？",
+            "url": "https://www.zhihu.com/question/2086764289658807574",
+            "heat": "141 万热度",
+            "extra": "美国当地时间9月27日8时55分（北京时间9月27日20时55分），大熊猫“平平”“福双”平安到达美国亚特兰大动物园。更多资讯请下载央视新闻客户端 美国东部时间27日晨，中国大熊猫“平平”“福双”搭乘包机抵达美国亚特兰大国际机场。根据中美双"
+          },
+          {
+            "title": "既然国人嫌弃月饼高油高糖，为啥不把月饼出口到喜爱糖油混合物的美国呢？",
+            "url": "https://www.zhihu.com/question/2084270983846875442",
+            "heat": "116 万热度",
+            "extra": ""
+          },
+          {
+            "title": "男子8万救命钱被盗刷并称银行 1 条提醒短信都没发，银行称责任划分需司法机构裁决，银行到底该不该担责？",
+            "url": "https://www.zhihu.com/question/2086029809914855744",
+            "heat": "110 万热度",
+            "extra": "银行卡就在身上，卡里约8万元钱却在几分钟内被分批转走。 今年1月，湖北十堰郧西县周先生的妻子因患癌需要资金购药。2月12日中午，他查账时发现，自己存在工商银行卡内的资金已所剩无几——原本8.2万余元的余额，只剩下不到4000元。周先生立即向"
+          },
+          {
+            "title": "如何评价 9 月 23 日发布的Claude Opus 5.5？",
+            "url": "https://www.zhihu.com/question/2085935290347275671",
+            "heat": "100 万热度",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "douyin",
+        "name": "抖音热搜",
+        "category": "短视频流量",
+        "fetcher": "fetch_douyin",
+        "limit": 20,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "吴艳妮田径女子100米栏铜牌",
+            "url": "https://www.douyin.com/search/%E5%90%B4%E8%89%B3%E5%A6%AE%E7%94%B0%E5%BE%84%E5%A5%B3%E5%AD%90100%E7%B1%B3%E6%A0%8F%E9%93%9C%E7%89%8C",
+            "heat": "热度 12138648",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "严子怡破纪录夺金",
+            "url": "https://www.douyin.com/search/%E4%B8%A5%E5%AD%90%E6%80%A1%E7%A0%B4%E7%BA%AA%E5%BD%95%E5%A4%BA%E9%87%91",
+            "heat": "热度 11933466",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "大熊猫 “平平”“福双”抵达美国",
+            "url": "https://www.douyin.com/search/%E5%A4%A7%E7%86%8A%E7%8C%AB%20%E2%80%9C%E5%B9%B3%E5%B9%B3%E2%80%9D%E2%80%9C%E7%A6%8F%E5%8F%8C%E2%80%9D%E6%8A%B5%E8%BE%BE%E7%BE%8E%E5%9B%BD",
+            "heat": "热度 11533521",
+            "extra": ""
+          },
+          {
+            "title": "9月30号国庆前最后一天belike",
+            "url": "https://www.douyin.com/search/9%E6%9C%8830%E5%8F%B7%E5%9B%BD%E5%BA%86%E5%89%8D%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9belike",
+            "heat": "热度 11291995",
+            "extra": ""
+          },
+          {
+            "title": "国乒男双战胜日本夺冠",
+            "url": "https://www.douyin.com/search/%E5%9B%BD%E4%B9%92%E7%94%B7%E5%8F%8C%E6%88%98%E8%83%9C%E6%97%A5%E6%9C%AC%E5%A4%BA%E5%86%A0",
+            "heat": "热度 10707200",
+            "extra": ""
+          },
+          {
+            "title": "陈妤颉22秒93夺亚运200米银牌",
+            "url": "https://www.douyin.com/search/%E9%99%88%E5%A6%A4%E9%A2%8922%E7%A7%9293%E5%A4%BA%E4%BA%9A%E8%BF%90200%E7%B1%B3%E9%93%B6%E7%89%8C",
+            "heat": "热度 10662303",
+            "extra": ""
+          },
+          {
+            "title": "陈圆将男子110米栏夺冠",
+            "url": "https://www.douyin.com/search/%E9%99%88%E5%9C%86%E5%B0%86%E7%94%B7%E5%AD%90110%E7%B1%B3%E6%A0%8F%E5%A4%BA%E5%86%A0",
+            "heat": "热度 9539525",
+            "extra": ""
+          },
+          {
+            "title": "我也开始看月亮了",
+            "url": "https://www.douyin.com/search/%E6%88%91%E4%B9%9F%E5%BC%80%E5%A7%8B%E7%9C%8B%E6%9C%88%E4%BA%AE%E4%BA%86",
+            "heat": "热度 9333419",
+            "extra": ""
+          },
+          {
+            "title": "国足0:3不敌新西兰",
+            "url": "https://www.douyin.com/search/%E5%9B%BD%E8%B6%B30%3A3%E4%B8%8D%E6%95%8C%E6%96%B0%E8%A5%BF%E5%85%B0",
+            "heat": "热度 9256274",
+            "extra": ""
+          },
+          {
+            "title": "十五的月亮十七圆",
+            "url": "https://www.douyin.com/search/%E5%8D%81%E4%BA%94%E7%9A%84%E6%9C%88%E4%BA%AE%E5%8D%81%E4%B8%83%E5%9C%86",
+            "heat": "热度 9254499",
+            "extra": ""
+          },
+          {
+            "title": "中秋假期赶作业实录",
+            "url": "https://www.douyin.com/search/%E4%B8%AD%E7%A7%8B%E5%81%87%E6%9C%9F%E8%B5%B6%E4%BD%9C%E4%B8%9A%E5%AE%9E%E5%BD%95",
+            "heat": "热度 9247894",
+            "extra": ""
+          },
+          {
+            "title": "我的中秋假期打烊日记",
+            "url": "https://www.douyin.com/search/%E6%88%91%E7%9A%84%E4%B8%AD%E7%A7%8B%E5%81%87%E6%9C%9F%E6%89%93%E7%83%8A%E6%97%A5%E8%AE%B0",
+            "heat": "热度 9213591",
+            "extra": ""
+          },
+          {
+            "title": "石宇奇称亚运会后退役是谣言",
+            "url": "https://www.douyin.com/search/%E7%9F%B3%E5%AE%87%E5%A5%87%E7%A7%B0%E4%BA%9A%E8%BF%90%E4%BC%9A%E5%90%8E%E9%80%80%E5%BD%B9%E6%98%AF%E8%B0%A3%E8%A8%80",
+            "heat": "热度 9145713",
+            "extra": ""
+          },
+          {
+            "title": "迪士尼烟花和holymoly的适配度",
+            "url": "https://www.douyin.com/search/%E8%BF%AA%E5%A3%AB%E5%B0%BC%E7%83%9F%E8%8A%B1%E5%92%8Cholymoly%E7%9A%84%E9%80%82%E9%85%8D%E5%BA%A6",
+            "heat": "热度 9101447",
+            "extra": ""
+          },
+          {
+            "title": "陈小春沈阳演唱会",
+            "url": "https://www.douyin.com/search/%E9%99%88%E5%B0%8F%E6%98%A5%E6%B2%88%E9%98%B3%E6%BC%94%E5%94%B1%E4%BC%9A",
+            "heat": "热度 9029195",
+            "extra": ""
+          },
+          {
+            "title": "谢霆锋重庆演唱会",
+            "url": "https://www.douyin.com/search/%E8%B0%A2%E9%9C%86%E9%94%8B%E9%87%8D%E5%BA%86%E6%BC%94%E5%94%B1%E4%BC%9A",
+            "heat": "热度 9024772",
+            "extra": ""
+          },
+          {
+            "title": "两广人中秋拜月仪式感拉满",
+            "url": "https://www.douyin.com/search/%E4%B8%A4%E5%B9%BF%E4%BA%BA%E4%B8%AD%E7%A7%8B%E6%8B%9C%E6%9C%88%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%8B%89%E6%BB%A1",
+            "heat": "热度 8965630",
+            "extra": ""
+          },
+          {
+            "title": "别人拍的月亮vs我拍的月亮",
+            "url": "https://www.douyin.com/search/%E5%88%AB%E4%BA%BA%E6%8B%8D%E7%9A%84%E6%9C%88%E4%BA%AEvs%E6%88%91%E6%8B%8D%E7%9A%84%E6%9C%88%E4%BA%AE",
+            "heat": "热度 8831122",
+            "extra": ""
+          },
+          {
+            "title": "黄友闻亚运会男子200米摘银",
+            "url": "https://www.douyin.com/search/%E9%BB%84%E5%8F%8B%E9%97%BB%E4%BA%9A%E8%BF%90%E4%BC%9A%E7%94%B7%E5%AD%90200%E7%B1%B3%E6%91%98%E9%93%B6",
+            "heat": "热度 8332714",
+            "extra": ""
+          },
+          {
+            "title": "国庆出游穿搭思路有了",
+            "url": "https://www.douyin.com/search/%E5%9B%BD%E5%BA%86%E5%87%BA%E6%B8%B8%E7%A9%BF%E6%90%AD%E6%80%9D%E8%B7%AF%E6%9C%89%E4%BA%86",
+            "heat": "热度 8073945",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "bilibili_popular",
+        "name": "B站热门视频",
+        "category": "视频内容风向",
+        "fetcher": "fetch_bilibili_popular",
+        "limit": 15,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "蛙跳爬泰山",
+            "url": "https://www.bilibili.com/video/BV1Hxah6BEGy",
+            "heat": "播放 367205 / 赞 63315",
+            "extra": "-",
+            "desc": ""
+          },
+          {
+            "title": "挑战自助餐最亏本的十类食物！通通吃一遍！",
+            "url": "https://www.bilibili.com/video/BV1tNab65ECw",
+            "heat": "播放 571782 / 赞 28738",
+            "extra": "吃自助嘛，最重要的是开心～不要纠结回不回本～\n（当然了，我还是认为自助啥价位，就吃啥东西。 百元以内吃个炒饭填饱肚子还能理解，五六百的自助就没必要吃炒饭了。）",
+            "desc": ""
+          },
+          {
+            "title": "《三角洲行动》群星计划—代号：深蓝",
+            "url": "https://www.bilibili.com/video/BV1sghX6KEkX",
+            "heat": "播放 2693202 / 赞 144590",
+            "extra": "盾的骨髓里流淌着两个使命，一个是守护，一个是牺牲。\n但当盾的身后空无一人，盾的使命也将不复存在。\n所以，盾选择重新站在前方。"
+          },
+          {
+            "title": "【独家】牧神记 第102集 大尊",
+            "url": "https://www.bilibili.com/video/BV152aA6nEz4",
+            "heat": "播放 2003686 / 赞 31587",
+            "extra": "班公措品酒论往事，大尊历代转世风云"
+          },
+          {
+            "title": "钓鱼被鱼揍了",
+            "url": "https://www.bilibili.com/video/BV1Usat6rEm1",
+            "heat": "播放 512896 / 赞 57994",
+            "extra": "朋友们！看完不妨点赞、投币、收藏啊！下次再整个恐怖联机游戏练练胆！"
+          },
+          {
+            "title": "《纯粹の体育精神》",
+            "url": "https://www.bilibili.com/video/BV1Kyas6wEuz",
+            "heat": "播放 1952344 / 赞 152764",
+            "extra": "-"
+          },
+          {
+            "title": "【短的发布会】广汽偷偷进军房地产？传祺越 7化身最强房车送你全套户外大平层",
+            "url": "https://www.bilibili.com/video/BV1HZhC63ECT",
+            "heat": "播放 998498 / 赞 13663",
+            "extra": "买车还送客厅厨房？"
+          },
+          {
+            "title": "我们尝试用AI造了一个时空",
+            "url": "https://www.bilibili.com/video/BV1TPa46MEwU",
+            "heat": "播放 667595 / 赞 29474",
+            "extra": "江浙沪能存在，全靠一堵墙？\n保卫江浙沪，有多难？"
+          },
+          {
+            "title": "《崩坏：星穹铁道》真珠角色PV——「如何描绘一种希望」",
+            "url": "https://www.bilibili.com/video/BV1Rmh96ZEXh",
+            "heat": "播放 2018883 / 赞 139000",
+            "extra": "母题：什么是完美的艺术？\n为世界存亡挥笔时，她忘记了问题，却得到了答案。\n \n中文CV：\n真珠——苏婉\n ‌\n日文CV：\n真珠——安野希世乃\n ‌\n英文CV：\n真珠——Cat Protano\n ‌\n韩文CV：\n真珠——여윤미"
+          },
+          {
+            "title": "【剧情】长生契（2026）07【方逸伦 / 谢可寅】",
+            "url": "https://www.bilibili.com/video/BV1aUem6yEur",
+            "heat": "播放 467626 / 赞 1186",
+            "extra": "《长生契》讲述了宁长樾与宋亦秋跨越三千年的深沉羁绊。他们在无尽时光中相守，遍历人间烟火，成为彼此唯一的坐标。步入现代，他们开始重新审视永恒的意义，在追寻内心归宿时，一段被漫长岁月尘封的过往与复杂的未解之缘逐渐浮现。面对历史的涟漪与当下的波澜"
+          },
+          {
+            "title": "没人会记得神作之下的第二名，除非那一年都是逆天神梗！",
+            "url": "https://www.bilibili.com/video/BV114h96GEyq",
+            "heat": "播放 2306840 / 赞 60371",
+            "extra": "【神作之下热梗篇】"
+          },
+          {
+            "title": "【STN快报第8.5季22】史上最刀发布会，玩家看完纷纷感叹太刀了",
+            "url": "https://www.bilibili.com/video/BV16ya86iEWL",
+            "heat": "播放 332807 / 赞 29027",
+            "extra": "重生之我在战场干日结"
+          },
+          {
+            "title": "新的史。。世界。",
+            "url": "https://www.bilibili.com/video/BV1B1h96FEZs",
+            "heat": "播放 678165 / 赞 40818",
+            "extra": "嘻嘻"
+          },
+          {
+            "title": "TES在VCTCN都算战神！无畏契约上海冠军赛门全员光头，一把不赢！【1酱赛评】",
+            "url": "https://www.bilibili.com/video/BV1GYas6zELr",
+            "heat": "播放 775325 / 赞 19795",
+            "extra": "视频制作剪辑@闻人常安AreS"
+          },
+          {
+            "title": "和儿子互换身份，他竟然狂亲他爸？",
+            "url": "https://www.bilibili.com/video/BV1RLhW6MExo",
+            "heat": "播放 1798713 / 赞 29657",
+            "extra": "我笑死了粽子模仿我 那么肉麻的吗！！大家看的开心哟！\n上完课有人带着吃喝来接我太幸福了嘿嘿！"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "bilibili_hot_search",
+        "name": "B站热搜",
+        "category": "视频内容风向",
+        "fetcher": "fetch_bilibili_hot_search",
+        "limit": 15,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "习主席对美国进行国事访问纪实",
+            "url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E4%B8%BB%E5%B8%AD%E5%AF%B9%E7%BE%8E%E5%9B%BD%E8%BF%9B%E8%A1%8C%E5%9B%BD%E4%BA%8B%E8%AE%BF%E9%97%AE%E7%BA%AA%E5%AE%9E",
+            "heat": "热搜分 7549427",
+            "extra": "习主席对美国进行国事访问纪实",
+            "desc": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
+          },
+          {
+            "title": "JDG FUT",
+            "url": "https://search.bilibili.com/all?keyword=JDG%20FUT",
+            "heat": "热搜分 6920366",
+            "extra": "FUT战胜JDG VCT冠军赛",
+            "desc": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
+          },
+          {
+            "title": "国足主场0-3新西兰",
+            "url": "https://search.bilibili.com/all?keyword=%E5%9B%BD%E8%B6%B3%E4%B8%BB%E5%9C%BA0-3%E6%96%B0%E8%A5%BF%E5%85%B0",
+            "heat": "热搜分 3874101",
+            "extra": "国足主场0-3新西兰"
+          },
+          {
+            "title": "吴艳妮铜牌",
+            "url": "https://search.bilibili.com/all?keyword=%E5%90%B4%E8%89%B3%E5%A6%AE%E9%93%9C%E7%89%8C",
+            "heat": "热搜分 1180400",
+            "extra": "吴艳妮铜牌"
+          },
+          {
+            "title": "100T T1",
+            "url": "https://search.bilibili.com/all?keyword=100T%20T1",
+            "heat": "热搜分 736848",
+            "extra": "100T战胜T1 VCT冠军赛"
+          },
+          {
+            "title": "世界周刊谈德国选择党",
+            "url": "https://search.bilibili.com/all?keyword=%E4%B8%96%E7%95%8C%E5%91%A8%E5%88%8A%E8%B0%88%E5%BE%B7%E5%9B%BD%E9%80%89%E6%8B%A9%E5%85%9A",
+            "heat": "热搜分 551935",
+            "extra": "世界周刊谈德国选择党"
+          },
+          {
+            "title": "中国在华盛顿主动出牌",
+            "url": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E5%9C%A8%E5%8D%8E%E7%9B%9B%E9%A1%BF%E4%B8%BB%E5%8A%A8%E5%87%BA%E7%89%8C",
+            "heat": "热搜分 481589",
+            "extra": "中国在华盛顿主动出牌"
+          },
+          {
+            "title": "陈圆将110米栏金牌",
+            "url": "https://search.bilibili.com/all?keyword=%E9%99%88%E5%9C%86%E5%B0%86110%E7%B1%B3%E6%A0%8F%E9%87%91%E7%89%8C",
+            "heat": "热搜分 455275",
+            "extra": "陈圆将110米栏金牌"
+          },
+          {
+            "title": "世界周刊谈中美稳定之道",
+            "url": "https://search.bilibili.com/all?keyword=%E4%B8%96%E7%95%8C%E5%91%A8%E5%88%8A%E8%B0%88%E4%B8%AD%E7%BE%8E%E7%A8%B3%E5%AE%9A%E4%B9%8B%E9%81%93",
+            "heat": "热搜分 420461",
+            "extra": "世界周刊谈中美稳定之道"
+          },
+          {
+            "title": "国庆会迎来降温天气吗",
+            "url": "https://search.bilibili.com/all?keyword=%E5%9B%BD%E5%BA%86%E4%BC%9A%E8%BF%8E%E6%9D%A5%E9%99%8D%E6%B8%A9%E5%A4%A9%E6%B0%94%E5%90%97",
+            "heat": "热搜分 400896",
+            "extra": "国庆会迎来降温天气吗"
+          },
+          {
+            "title": "如果回到放假前就好了",
+            "url": "https://search.bilibili.com/all?keyword=%E5%A6%82%E6%9E%9C%E5%9B%9E%E5%88%B0%E6%94%BE%E5%81%87%E5%89%8D%E5%B0%B1%E5%A5%BD%E4%BA%86",
+            "heat": "热搜分 400895",
+            "extra": "如果回到放假前就好了"
+          },
+          {
+            "title": "峰哥亡命清单越南篇",
+            "url": "https://search.bilibili.com/all?keyword=%E5%B3%B0%E5%93%A5%E4%BA%A1%E5%91%BD%E6%B8%85%E5%8D%95%E8%B6%8A%E5%8D%97%E7%AF%87",
+            "heat": "热搜分 400893",
+            "extra": "峰哥亡命清单越南篇"
+          },
+          {
+            "title": "弹丸论破但是真人版",
+            "url": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E4%B8%B8%E8%AE%BA%E7%A0%B4%E4%BD%86%E6%98%AF%E7%9C%9F%E4%BA%BA%E7%89%88",
+            "heat": "热搜分 400892",
+            "extra": "弹丸论破但是真人版"
+          },
+          {
+            "title": "洲际弹道导弹是怎么工作的",
+            "url": "https://search.bilibili.com/all?keyword=%E6%B4%B2%E9%99%85%E5%BC%B9%E9%81%93%E5%AF%BC%E5%BC%B9%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84",
+            "heat": "热搜分 400891",
+            "extra": "洲际弹道导弹是怎么工作的"
+          },
+          {
+            "title": "五金月饼",
+            "url": "https://search.bilibili.com/all?keyword=%E4%BA%94%E9%87%91%E6%9C%88%E9%A5%BC",
+            "heat": "热搜分 400890",
+            "extra": "五金月饼"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ifanr",
+        "name": "爱范儿",
+        "category": "商业科技媒体",
+        "fetcher": "fetch_ifanr",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "早报｜网易云音乐鸿蒙版正式上线/任正非重申「华为不造车」/腾讯QClaw将停运",
+            "url": "https://www.ifanr.com/1682171?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 25 Sep 2026",
+            "extra": "",
+            "desc": "· 腾讯 WorkBuddy 上线微信小程序生成和发布能力 · Google 下周将把 TPU 送入轨道，测试太空运行条件 · 9999 元，尼康发布 Z5IIC 全画幅相机"
+          },
+          {
+            "title": "14.99 万元起，全新旅行者 7 开启预售，插混燃油两手抓",
+            "url": "https://www.ifanr.com/1682158?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": "",
+            "desc": "也是一种「三电机」。"
+          },
+          {
+            "title": "奕境 X9 上市 28.98 万元起！华为系大六座有了一个新选项",
+            "url": "https://www.ifanr.com/1682142?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "1/3 价格，1/8 重量，Meta 新眼镜秒杀 Vision Pro 了？",
+            "url": "https://www.ifanr.com/1682116?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "00 后开发者，给我安利了这几个超好用的鸿蒙新能力",
+            "url": "https://www.ifanr.com/1682109?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "小团队的大创意，为什么能在 HarmonyOS 7 上变为现实？",
+            "url": "https://www.ifanr.com/1682085?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "5999 起！无需多言｜小米 18 Pro 系列发布会",
+            "url": "https://www.ifanr.com/1682002?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "高通新王牌：个人 AI 时代来了",
+            "url": "https://www.ifanr.com/1682048?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "AI 想包办你的一切，高通想包办你的 AI",
+            "url": "https://www.ifanr.com/1681946?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "智能手表的尽头是「做减法」：小团队如何用「几秒钟」抢占穿戴新蓝海？",
+            "url": "https://www.ifanr.com/1681759?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "刚刚，苹果「液态玻璃」缔造者，给 Muse 造了个 AI 拓麻歌子",
+            "url": "https://www.ifanr.com/1681928?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "早报｜iOS27测试版新功能可阻止摇一摇广告/5999起，小米18 Pro发布/宾利发布首款纯电车Torcal，888马力",
+            "url": "https://www.ifanr.com/1681909?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "小米 18 Pro Max 首发评测：最好的小米手机，也是最好玩的小米手机",
+            "url": "https://www.ifanr.com/1681778?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "从 iPhone 18 开始，苹果给你的照片打上「看不见」的水印",
+            "url": "https://www.ifanr.com/1681780?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "‌​⁣‌‌⁤⁡⁤‬⁡﻿​﻿‌⁤‬‬⁣​‌⁢​‬⁣‬​​⁤​‬​‬‍​⁤﻿﻿⁤​⁢⁣⁢​‍⁡​‬‬﻿⁢WorkBuddy 把办公 Agent，做成了人人可搭的「赛博乐高」",
+            "url": "https://www.ifanr.com/1681649?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "制糖工厂发布小电拼 Core：四口全 AVS，开启超快补能，小巧随行",
+            "url": "https://www.ifanr.com/1681696?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "Claude 5.5 发布，性能直逼 Fable，还要卷价格",
+            "url": "https://www.ifanr.com/1681629?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "⁡⁤‬‍⁤‬​‌‍⁢⁡⁢⁣‌‌﻿⁡⁡​⁤​​﻿⁢⁡‬⁡‬​‍⁣​​﻿⁤⁡‍​⁡‬‌‬⁣⁡⁣​⁡‬⁤刚刚，GPT-6 新模型掀桌！「白菜价」杀进 DeepSeek 腹地",
+            "url": "https://www.ifanr.com/1681605?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "早报｜GPT-6 Sol发布，价格腰斩/特努斯：Siri AI不应代替人际关系/4999起，OPPO Find X10系列发布",
+            "url": "https://www.ifanr.com/1681566?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "10.99 万元起！日产新 N7 这次是真加量还降价",
+            "url": "https://www.ifanr.com/1681515?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Tue, 22 Sep 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "geekpark",
+        "name": "极客公园",
+        "category": "科技商业媒体",
+        "fetcher": "fetch_geekpark",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "阿里整合 AI 办公力量后，千问办公怎么打这场大战？",
+            "url": "http://www.geekpark.net/news/371040",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": "",
+            "desc": "企业需要的已经不只是一个能写文档、做 PPT 的通用助手，而是一个能够理解组织数据、进入业务流程，同时受到身份、权限和审计约束的 Agent。"
+          },
+          {
+            "title": "接连发生 AI 失控，OpenAI 暂停最强模型训练；腾讯推出云端小龙虾：已接入微信 QQ；王兴兴回应造 390 万元变形机甲",
+            "url": "http://www.geekpark.net/news/371039",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": "",
+            "desc": "苹果侵犯专利一波三折：被判赔付 57 亿美元；OpenCode 宣布为 DeepSeek V4.1 Flash 永久提供 60 美元额度；Claude Code 新机制：AI 任务中途触发 5 小时上限将优雅收尾"
+          },
+          {
+            "title": "Deepseek 桌面版悄悄上线；Muse 大火，扎克伯格跃升全球第四大富豪；OpenAI 被曝筹备推出 ProMax 订阅层级，月费或达 500-600 美元",
+            "url": "http://www.geekpark.net/news/371038",
+            "heat": "Sat, 26 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "OPPO 姜昱辰：大模型的差距越来越小，AI 手机的差距才刚拉开",
+            "url": "http://www.geekpark.net/news/371035",
+            "heat": "Fri, 25 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "三折叠终于不像奇观了，但它还是 19999 元",
+            "url": "http://www.geekpark.net/news/371034",
+            "heat": "Fri, 25 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "「济公」游本昌去世；罗永浩再评小米 18 Fold；Meta 推出手持设备 Muse Charm｜极客早知道",
+            "url": "http://www.geekpark.net/news/371033",
+            "heat": "Fri, 25 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "Agent 时代来了，3D 生成大模型接下来比什么？",
+            "url": "http://www.geekpark.net/news/371031",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "李彦宏的长期主义，进入回报周期",
+            "url": "http://www.geekpark.net/news/371030",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "从数人头到数智能体：一场正在发生的企业生产力换血",
+            "url": "http://www.geekpark.net/news/371011",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "OpenAI CEO : AI 可能带来工业革命式动荡；Anthropic 宣布成立生命科学团队和实验室；腾讯 QClaw 宣布将停运",
+            "url": "http://www.geekpark.net/news/370917",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "剪映，杀入 AI 互动影游",
+            "url": "http://www.geekpark.net/news/370883",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "拆解下阿里的 AI 经济学，与它的下注",
+            "url": "http://www.geekpark.net/news/370865",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "从单卡到千卡互联，平头哥真武 V900 背后的 AI 算力变局",
+            "url": "http://www.geekpark.net/news/370864",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "OpenAI 发布 GPT-6 Sol 和 Luna；传字节跳动豆包收缩对话团队；千问发布 AI 手机全栈解决方案 | 极客早知道",
+            "url": "http://www.geekpark.net/news/370829",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "Meta 个人 AI 助手刚火 13 天，Amazon 就拉闸了",
+            "url": "http://www.geekpark.net/news/370797",
+            "heat": "Tue, 22 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "黄仁勋：AI 时代，企业应该尽可能多付薪酬；宇树科技发布 Dex5-S 灵巧手；OpenAI 新模型 24 天解决 100+ 世界级数学难题 | 极客早知道",
+            "url": "http://www.geekpark.net/news/370768",
+            "heat": "Tue, 22 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "零跑的新目标：从「小米」成为「苹果」",
+            "url": "http://www.geekpark.net/news/370765",
+            "heat": "Mon, 21 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "Jev，让全球程序员玩疯了",
+            "url": "http://www.geekpark.net/news/370758",
+            "heat": "Mon, 21 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "把未来做成基础设施｜亚马逊 CTO Dr.Werner Vogels 与云计算 20 年",
+            "url": "http://www.geekpark.net/news/370759",
+            "heat": "Mon, 21 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "对话桥介数物：机器人运动的下一步是让任何机器人半小时内学会跳特定的舞",
+            "url": "http://www.geekpark.net/news/370717",
+            "heat": "Mon, 21 Sep 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "sspai",
+        "name": "少数派",
+        "category": "数字生活/效率/副业",
+        "fetcher": "fetch_sspai",
+        "limit": 15,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "本月玩什么｜鬼武者 剑之道、火焰纹章 万缕千丝、轨道双子星等",
+            "url": "https://sspai.com/post/115056",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": "",
+            "desc": "《鬼武者》系列的惊艳复活，《风花雪月》的世界观延续，赛璐珞动画风格的双人历险……"
+          },
+          {
+            "title": "宜家 Matter 智能家居终于要来了？在中国市场它将如何破局",
+            "url": "https://sspai.com/post/114958",
+            "heat": "Sat, 26 Sep 2026",
+            "extra": "",
+            "desc": "距离宜家首批Matter智能家居产品在海外上市已有大半年的时间，而中国市场则是许久未有消息。直到今年年中，多款宜家智能新品陆续出现在国家CCC认证数据库中，我们才得知：这批主打高性价比、支持新一代智能 ..."
+          },
+          {
+            "title": "本周看什么 | 最近值得一看的 6 部作品",
+            "url": "https://sspai.com/post/114957",
+            "heat": "Fri, 25 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "新玩意 252｜少数派的编辑们最近买了啥？",
+            "url": "https://sspai.com/post/114954",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "家庭饮品 DIY 指南（五）：特调咖啡及其他饮品",
+            "url": "https://sspai.com/prime/story/home-made-beverages-5",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "微软在游戏行业的早期试水：一段与梦工厂的「梦幻联动」",
+            "url": "https://sspai.com/post/113823",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "古董电脑室十周年记：为什么我不再是收藏家（上）",
+            "url": "https://sspai.com/post/114395",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "派早报：小米召开秋季新品发布会、千问发布 Qwen-Audio-3.1系列模型等",
+            "url": "https://sspai.com/post/114913",
+            "heat": "Thu, 24 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "社区速递 159 | 便携卡片充电器与库克十五年改变生活的产品",
+            "url": "https://sspai.com/post/114904",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "具透 | 新「环境」、新变化，visionOS 27 值得关注的新特性",
+            "url": "https://sspai.com/post/114901",
+            "heat": "Wed, 23 Sep 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ithome",
+        "name": "IT之家",
+        "category": "科技新闻",
+        "fetcher": "fetch_ithome",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "iQOO Pad Ultra 平板官宣搭载 9020mAh 蓝海电池，8.8 英寸机身轻至 298g",
+            "url": "https://www.ithome.com/1/007/612.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": "",
+            "desc": "这款平板仅厚 5.74mm，重 298g，将首批搭载高通第六代骁龙 8 超级至尊版，配备 165Hz 高刷屏，还搭载了冰穹五重风冷散热系统。#iQOO Pad Ultra#"
+          },
+          {
+            "title": "腾讯《三角洲行动》官宣联动国产武侠游戏《影之刃零》",
+            "url": "https://www.ithome.com/1/007/611.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": "",
+            "desc": "《影之刃零》确定 10 月 29 日正式发售，首发登陆 PS5、PS5 Pro 及 PC 多平台，国区标准版 268 元。虚幻 5 打造的暗黑武侠动作游戏，主角仅剩 66 天寿命。#影之刃零# #三角洲行动#"
+          },
+          {
+            "title": "第八代宝马 3 系 9 月 30 日全球首发，首次同时覆盖纯电和燃油动力",
+            "url": "https://www.ithome.com/1/007/610.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "爱奇艺回应网传“请勿眨眼”广告：大过节的，别恶搞造谣了",
+            "url": "https://www.ithome.com/1/007/608.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "“第二代豆包手机”努比亚 NaviX Ultra 玩《王者荣耀》遭强制下线？知情人士称有安全风险策略保障游戏公平，未有任何针对性调整",
+            "url": "https://www.ithome.com/1/007/607.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "助力我国可控核聚变战略实施，世界首个紧凑型聚变能实验装置 BEST TF 线圈盒批量交付",
+            "url": "https://www.ithome.com/1/007/606.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "部分 Anthropic 资深员工考虑在偏远地区购置土地，以防“AI 失控”",
+            "url": "https://www.ithome.com/1/007/603.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "国家邮政局：1 至 8 月全国日均揽收快递 5.23 亿件，全力做好中秋国庆假期寄递服务保障工作",
+            "url": "https://www.ithome.com/1/007/602.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "消息称苹果 iPhone 18 Pro 系列手机开售 7 天国内销量接近 130 万台，约为 iPhone 17 Pro 系列同期的 115%",
+            "url": "https://www.ithome.com/1/007/601.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "比亚迪腾势汽车李慧：如果用户需要更长的续航，那做 1200、1300 公里也是 OK 的",
+            "url": "https://www.ithome.com/1/007/599.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "消息称长安汽车成立 AD 协同发展部，阿维塔与深蓝开启实质整合",
+            "url": "https://www.ithome.com/1/007/598.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "2026 WSBK 意大利克雷莫纳站第二回合：张雪机车德比斯排名第五",
+            "url": "https://www.ithome.com/1/007/597.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "年轻人的第一台 RGB 游戏电视，小米 REDMI X 系列 RGB-Mini LED 2027 竞技版上架",
+            "url": "https://www.ithome.com/1/007/596.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "乘联分会崔东树：2026 年 8 月中国汽车进口 2.3 万辆，同比下降 51%",
+            "url": "https://www.ithome.com/1/007/595.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "李斌：蔚来已投入运营 4125 座换电站，可以组成 8GWh 储能网",
+            "url": "https://www.ithome.com/1/007/594.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "消息称小米 18 Pro 系列手机均为 TLC 颗粒，没有 QLC",
+            "url": "https://www.ithome.com/1/007/592.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "雷鸟鹤 6 系列 27 款 QD-Mini LED 电视开售：55-98 英寸，3175 元起",
+            "url": "https://www.ithome.com/1/007/591.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "预售 11.99 万起，北京现代艾尼氪 IONIQ V 车型 9 月 29 日上市",
+            "url": "https://www.ithome.com/1/007/590.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "OPPO Reno16t 手机上线官网：6.32 英寸直屏、天玑 8550 SUPER，3699 元起",
+            "url": "https://www.ithome.com/1/007/589.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          },
+          {
+            "title": "小鹏汇天赵德力：普通人“打飞的”至少还得 5 年，就比现在的滴滴稍微贵一点点",
+            "url": "https://www.ithome.com/1/007/587.htm",
+            "heat": "Sun, 27 Sep 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "v2ex",
+        "name": "V2EX 热帖",
+        "category": "开发者社区",
+        "fetcher": "fetch_v2ex",
+        "limit": 20,
+        "note": "公开 API；大陆网络可能不通，Actions 云端（海外）正常"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "女朋友说“在你这里很没有气氛”，性格沉闷的我该怎么补救？",
+            "url": "https://www.v2ex.com/t/1244983",
+            "heat": "回复 72",
+            "extra": "节点: 生活",
+            "desc": "生活 - @icoolboy - 认真求助大家，最近心里特别受挫。中秋节那天，女朋友在外地奔波，傍晚才赶回本地，第二天一早还要去上课，很辛苦。晚上聊天我像往常一样问她吃什么、洗澡了没，结果她委屈地说：“今天都快过完了，你都没跟我说节日"
+          },
+          {
+            "title": "10000000000 Token MUSE.AI，整理了七八十吧，省的翻了。",
+            "url": "https://www.v2ex.com/t/1245024",
+            "heat": "回复 55",
+            "extra": "节点: 分享发现",
+            "desc": "分享发现 - @rocyhua - HGM2XI X4J2WT LDHEVE DN4FF7 O0BRFS FI6SW0 G3391D RHLOKW WXFBXG 9OM8CT Q7KGME PN5MVG Q39WC3 W891N8 BT"
+          },
+          {
+            "title": "重置已收到，但是 X 上看了评论。。。",
+            "url": "https://www.v2ex.com/t/1244965",
+            "heat": "回复 38",
+            "extra": "节点: OpenAI"
+          },
+          {
+            "title": "各位大佬，请问怎么才能用上 Claude？",
+            "url": "https://www.v2ex.com/t/1244970",
+            "heat": "回复 34",
+            "extra": "节点: Claude"
+          },
+          {
+            "title": "muse 注册非常丝滑，正常注册就行！",
+            "url": "https://www.v2ex.com/t/1245031",
+            "heat": "回复 34",
+            "extra": "节点: AI Agent 智能体"
+          },
+          {
+            "title": "Claude 这波操作给我整不会了",
+            "url": "https://www.v2ex.com/t/1244968",
+            "heat": "回复 23",
+            "extra": "节点: Claude"
+          },
+          {
+            "title": "屌爆了，一句话使用 Opus5.5 制作了一个开源项目 StrokeMouse 宣传片，附提示词",
+            "url": "https://www.v2ex.com/t/1244972",
+            "heat": "回复 23",
+            "extra": "节点: 程序员"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "hn",
+        "name": "Hacker News",
+        "category": "全球科技风向",
+        "fetcher": "fetch_hn",
+        "limit": 15,
+        "note": "官方公开 API",
+        "lang": "en"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "\"They had no concept of a duty of care to their users.\"",
+            "url": "https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/",
+            "heat": "211 分 / 152 评论",
+            "extra": "",
+            "desc": "A blog about software craft and quality",
+            "zh": "他们对用户毫无关怀义务的概念。"
+          },
+          {
+            "title": "The Normalization of Inexplicable Failures",
+            "url": "https://www.ihatethefuture.com/2026/09/the-normalization-of-inexplicable.html",
+            "heat": "41 分 / 5 评论",
+            "extra": "",
+            "desc": "",
+            "zh": "莫名失败的常态化"
+          },
+          {
+            "title": "In an $80 Motel Room, a Discovery to Shed Light on the Origins of Life",
+            "url": "https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html",
+            "heat": "59 分 / 22 评论",
+            "extra": "",
+            "zh": "在80美元的汽车旅馆房间里，一项揭示生命起源的发现"
+          },
+          {
+            "title": "Replacing the old battery on rechargeable bike lights",
+            "url": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights/",
+            "heat": "61 分 / 23 评论",
+            "extra": "",
+            "zh": "更换可充电自行车灯上的旧电池"
+          },
+          {
+            "title": "Writing Efficient C++ Code",
+            "url": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
+            "heat": "36 分 / 8 评论",
+            "extra": "",
+            "zh": "编写高效的C++代码"
+          },
+          {
+            "title": "Show HN: TinyAIArena watch AI agents battle it out",
+            "url": "https://tinyaiarena.com/",
+            "heat": "15 分 / 5 评论",
+            "extra": "",
+            "zh": "Show HN：TinyAIArena 观看AI代理对决"
+          },
+          {
+            "title": "Ten Lines of Code That Changed My World",
+            "url": "https://pixelambacht.nl/2026/ten-lines-of-code/",
+            "heat": "33 分 / 4 评论",
+            "extra": "",
+            "zh": "改变我世界的十行代码"
+          },
+          {
+            "title": "Font where each token is equal-width",
+            "url": "https://twitter.com/amplifiedamp/status/2103535129503383700",
+            "heat": "24 分 / 8 评论",
+            "extra": "",
+            "zh": "每个标记等宽的字体"
+          },
+          {
+            "title": "Flip Fluid on Flip Dots",
+            "url": "https://mitxela.com/projects/flipflip",
+            "heat": "273 分 / 18 评论",
+            "extra": "",
+            "zh": "翻转点上的流体模拟"
+          },
+          {
+            "title": "Show HN: A CC0 museum of retro 3D tricks you can paste into a page",
+            "url": "https://3d-retro.com/",
+            "heat": "36 分 / 8 评论",
+            "extra": "",
+            "zh": "Show HN：一个可粘贴到页面的复古3D技巧CC0博物馆"
+          },
+          {
+            "title": "Fakecloud: Local AWS cloud emulator for integration tests",
+            "url": "https://fakecloud.dev/",
+            "heat": "43 分 / 26 评论",
+            "extra": "",
+            "zh": "Fakecloud：用于集成测试的本地AWS云模拟器"
+          },
+          {
+            "title": "Does Georgism work? Five years later",
+            "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+            "heat": "459 分 / 370 评论",
+            "extra": "",
+            "zh": "乔治主义有效吗？五年之后"
+          },
+          {
+            "title": "postmarketOS Rebrand: Nura",
+            "url": "https://nura.eco/blog/2026/09/27/nura-rename/",
+            "heat": "36 分 / 0 评论",
+            "extra": ""
+          },
+          {
+            "title": "Go Concurrency Distilled",
+            "url": "https://antonz.org/go-concurrency-distilled/",
+            "heat": "314 分 / 134 评论",
+            "extra": ""
+          },
+          {
+            "title": "Finally, A True Blue Rose Exists",
+            "url": "https://www.sciencenews.org/article/true-blue-rose-pigment-copigment",
+            "heat": "71 分 / 27 评论",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "github_trending",
+        "name": "GitHub Trending",
+        "category": "开发者生态",
+        "fetcher": "fetch_github_trending",
+        "limit": 15,
+        "note": "HTML 解析；大陆网络可能不通，Actions 云端正常",
+        "lang": "en"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "paperclipai/paperclip",
+            "url": "https://github.com/paperclipai/paperclip",
+            "heat": "89,028 stars",
+            "extra": "The open-source app everyone uses to manage agents at work",
+            "desc": "The open-source app everyone uses to manage agents at work - paperclipai/paperclip",
+            "zh": "paperclipai/paperclip"
+          },
+          {
+            "title": "vectorize-io/hindsight",
+            "url": "https://github.com/vectorize-io/hindsight",
+            "heat": "36,170 stars",
+            "extra": "Hindsight: Agent Memory That Learns",
+            "desc": "Hindsight: Agent Memory That Learns. Contribute to vectorize-io/hindsight development by creating an account on GitHub.",
+            "zh": "vectorize-io/hindsight"
+          },
+          {
+            "title": "debpalash/VoiceStudio",
+            "url": "https://github.com/debpalash/VoiceStudio",
+            "heat": "39,213 stars",
+            "extra": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictati",
+            "zh": "debpalash/VoiceStudio"
+          },
+          {
+            "title": "rohitg00/ai-engineering-from-scratch",
+            "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+            "heat": "58,972 stars",
+            "extra": "Learn it. Build it. Ship it for others.",
+            "zh": "rohitg00/ai-engineering-from-scratch"
+          },
+          {
+            "title": "InfinityLoop1308/PipePipe",
+            "url": "https://github.com/InfinityLoop1308/PipePipe",
+            "heat": "6,467 stars",
+            "extra": "An open-source Android app to let you browse YouTube and other services freely.",
+            "zh": "InfinityLoop1308/PipePipe"
+          },
+          {
+            "title": "vercel-labs/scriptc",
+            "url": "https://github.com/vercel-labs/scriptc",
+            "heat": "5,288 stars",
+            "extra": "TypeScript-to-Native Compiler",
+            "zh": "vercel-labs/scriptc"
+          },
+          {
+            "title": "mvschwarz/openrig",
+            "url": "https://github.com/mvschwarz/openrig",
+            "heat": "752 stars",
+            "extra": "Multi-agent harness that runs Claude Code and Codex together as one system",
+            "zh": "mvschwarz/openrig"
+          },
+          {
+            "title": "dream-num/univer",
+            "url": "https://github.com/dream-num/univer",
+            "heat": "19,993 stars",
+            "extra": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+            "zh": "dream-num/univer"
+          },
+          {
+            "title": "willfaust/Madeira",
+            "url": "https://github.com/willfaust/Madeira",
+            "heat": "738 stars",
+            "extra": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+            "zh": "willfaust/Madeira"
+          }
+        ]
+      }
+    }
+  ]
+}
