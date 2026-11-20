@@ -1,0 +1,1299 @@
+{
+  "date": "2026-11-21",
+  "slot": "evening",
+  "results": [
+    {
+      "source": {
+        "id": "zhihu",
+        "name": "知乎热榜",
+        "category": "中文舆论风向",
+        "fetcher": "fetch_zhihu",
+        "limit": 20,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "数学家称与 AI 合作证明了黎曼猜想，证明稿超 25 万页，黎曼猜想真的被解决了吗？",
+            "url": "https://www.zhihu.com/question/2107239235015263538",
+            "heat": "5752 万热度",
+            "extra": "近期，levent alpoge 公开了一份名为 remark.pdf`的文档（见alpo.ge/remark.pdf），宣称自己与Claude 合作，发现了黎曼猜想（Riemann Hypothesis）的证明。 根据公开文档中的内容，作",
+            "desc": ""
+          },
+          {
+            "title": "神秘模型 Gestalt 横空出世，设计基准上大幅超越 Claude、GPT，这款模型到底是啥来历？",
+            "url": "https://www.zhihu.com/question/2106839067346350136",
+            "heat": "594 万热度",
+            "extra": "Anthropic上市前夕，Contra Labs 的AI 设计能力的榜单——Frontier Design Benchmark 上，杀出了最大的一匹黑马，一个代号为 Gestalt 的匿名模型，以断层优势登顶，不但超越了Claude Fa",
+            "desc": ""
+          },
+          {
+            "title": "王毅介绍中俄美元首会晤情况，称这是一次「和平峰会」，是载入史册的标志性事件，传递出了哪些信号？",
+            "url": "https://www.zhihu.com/question/2107019870122547156",
+            "heat": "401 万热度",
+            "extra": "更多资讯请下载央视新闻客户端"
+          },
+          {
+            "title": "DeepSeek 第二轮融资 1050 多亿元落地，31 家外部股东入局，怎样解读？",
+            "url": "https://www.zhihu.com/question/2106889511993189511",
+            "heat": "216 万热度",
+            "extra": "《每日经济新闻》记者获悉，DeepSeek第二轮融资有了最新进展。 天眼查显示，11月17日，DeepSeek的工商主体杭州深度求索人工智能基础技术研究有限公司完成投资人变更，新增杭州程砚企业管理咨询合伙企业（有限合伙，以下简称杭州程砚），"
+          },
+          {
+            "title": "酒店的浴室为什么大多是透明的？",
+            "url": "https://www.zhihu.com/question/527454391",
+            "heat": "211 万热度",
+            "extra": ""
+          },
+          {
+            "title": "特朗普称如果满分 10 分，可以为中俄美元首会晤打 12 分，此次会晤对他有多重要？美方有哪些收获？",
+            "url": "https://www.zhihu.com/question/2107079876813353010",
+            "heat": "209 万热度",
+            "extra": "11月19日，美国全国广播公司（NBC）记者称，特朗普在接受采访时说：“如果（中俄美会晤）满分是10分，那我觉得能给它打12分。” 当地时间11月19日，结束亚洲之行正在回国的美国总统特朗普在社交媒体发文表示：“这是一次伟大且意义深远的访问"
+          },
+          {
+            "title": "中俄美三方的和平宣言发布后，将会为俄乌局势带来哪些变量？",
+            "url": "https://www.zhihu.com/question/2106847799899678337",
+            "heat": "207 万热度",
+            "extra": "更多资讯请下载央视新闻客户端"
+          },
+          {
+            "title": "中国政法、上大、上海交大等多所高校不向2027级研究生提供宿舍，为何各校宿舍紧张问题都迟迟没能解决？",
+            "url": "https://www.zhihu.com/question/2107038570422563911",
+            "heat": "200 万热度",
+            "extra": "开学前，先租房，这样的2027级研究生新生或将更多。 教育部近日发布的数据显示，2027年全国硕士研究生招生考试报名人数为347万，比上年增加4万，继续保持高位，也给高校宿舍床位带来压力。 近日，中国政法大学、上海大学、上海交通大学等高校明"
+          },
+          {
+            "title": "如何评价华为全新先锋潮流子品牌OSTA星芒？",
+            "url": "https://www.zhihu.com/question/2106692200478269466",
+            "heat": "179 万热度",
+            "extra": "华为近日推出了全新子品牌OSTA星芒。OSTA 源于 Original（原创）、Smart（智能）、Technology（科技）、Accessible（触手可及），主打「先锋、科技、AI」，搭载华为鸿蒙操作系统与麒麟芯片技术底座，是面向先锋"
+          },
+          {
+            "title": "为什么唐僧对猪八戒会有一点偏爱？",
+            "url": "https://www.zhihu.com/question/1977299907032397436",
+            "heat": "172 万热度",
+            "extra": ""
+          },
+          {
+            "title": "如何看待马斯克离开深圳，突访上海？",
+            "url": "https://www.zhihu.com/question/2106907755730814315",
+            "heat": "164 万热度",
+            "extra": "来源:上海证券报 2026年11月19日 23:29上海 11月19日，特斯拉CEO埃隆·马斯克（Elon Musk）来到位于上海临港的特斯拉超级工厂，和中国同事们分享辅助驾驶技术和人形机器人等项目的最新进展。在11月19日从深圳飞上海前，"
+          },
+          {
+            "title": "江南大学回应 「大学英语改为选修」，有通过四六级等免修条件，这一改革会成为趋势吗？",
+            "url": "https://www.zhihu.com/question/2106695521175860644",
+            "heat": "164 万热度",
+            "extra": "据九派新闻，11月14日，华东理工大学主办“智启新空间·共育新生态”高校未来学习中心建设创新与实践研讨会，针对AI时代的大学学习，不少与会者表示，高校在学分制度上可以有所调整。 会上，江南大学教务处处长黄锋林介绍，学校进行了制度性改革：把学"
+          },
+          {
+            "title": "驴友穿越秦岭遇难，家属起诉救援队，法院判定救援队、环保部门无过错，组织者赔偿18万余元，如何看待此事？",
+            "url": "https://www.zhihu.com/question/2106482614722883876",
+            "heat": "164 万热度",
+            "extra": "11月18日，此前备受公益救援界关注的秦岭4·21驴友失联遇难事件衍生诉讼，迎来一审宣判。 当日，西安市长安区人民法院沣峪人民法庭对该案作出一审判决。法院认定，遇难驴友陈某明知“光鹿跑兵冰”路线为严禁穿越的核心保护区，仍深夜绕行逃避检查，属"
+          },
+          {
+            "title": "如何评价《fx战士久留美》第八集？",
+            "url": "https://www.zhihu.com/question/2106829634486772699",
+            "heat": "164 万热度",
+            "extra": ""
+          },
+          {
+            "title": "你家的第一台电视是什么样的？为什么小时候总是特别期待看电视？",
+            "url": "https://www.zhihu.com/question/2106780350219120776",
+            "heat": "161 万热度",
+            "extra": "都说当下年轻人不爱看电视，但小时候似乎总是特别期待看电视，是会蹲守在电视前等待喜欢的节目开播，也会全家人一起边看边聊… 你还记得小时候家里的电视吗？它是什么牌子，摆在哪儿？长什么样子的，多大尺寸… 一起聊聊关于看电视的记忆～"
+          },
+          {
+            "title": "黄金大跌，你们会去购买黄金吗？",
+            "url": "https://www.zhihu.com/question/2098797483895828516",
+            "heat": "158 万热度",
+            "extra": "目前黄金价格对比年头下降了很多，你们会购买黄金进行投资吗？还是直接买黄金首饰呢？又或者等到什么价格再买呢？"
+          },
+          {
+            "title": "U17 世界杯小组赛，西班牙 U17  vs 中国 U17 男足，如何评价本场比赛？",
+            "url": "https://www.zhihu.com/question/2107245763558209161",
+            "heat": "151 万热度",
+            "extra": ""
+          },
+          {
+            "title": "如果 GTA6明年上 PC，什么配置可以发挥最完全体的画面效果？",
+            "url": "https://www.zhihu.com/question/2107056554713289409",
+            "heat": "112 万热度",
+            "extra": ""
+          },
+          {
+            "title": "旅行者 1 号飞行近 50 年抵达 1 光日位置，这一深空里程碑有哪些特殊价值？",
+            "url": "https://www.zhihu.com/question/2106398972487136971",
+            "heat": "95 万热度",
+            "extra": "光芒闪耀，跨越整个太阳系✨11月18日，NASA#旅行者1号#探测器将迎来一个非凡里程碑——它将抵达迄今为止没有任何人造物体到达过的距离：距离地球整整一光日。为了庆祝这一历史性时刻，NASA还将向这艘远行的探测器发送一段特别信息！今晚日落之"
+          },
+          {
+            "title": "如何评价《蓝色星原：旅谣》公测前瞻节目？",
+            "url": "https://www.zhihu.com/question/2106152174262800609",
+            "heat": "92 万热度",
+            "extra": "《蓝色星原：旅谣》公测前瞻节目预告 《蓝色星原：旅谣》公测前瞻节目将于11月20日19:00开启!"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "douyin",
+        "name": "抖音热搜",
+        "category": "短视频流量",
+        "fetcher": "fetch_douyin",
+        "limit": 20,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "U17男足0:5西班牙",
+            "url": "https://www.douyin.com/search/U17%E7%94%B7%E8%B6%B30%3A5%E8%A5%BF%E7%8F%AD%E7%89%99",
+            "heat": "热度 12101577",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "泰国总理带夫人在深圳吃夜宵",
+            "url": "https://www.douyin.com/search/%E6%B3%B0%E5%9B%BD%E6%80%BB%E7%90%86%E5%B8%A6%E5%A4%AB%E4%BA%BA%E5%9C%A8%E6%B7%B1%E5%9C%B3%E5%90%83%E5%A4%9C%E5%AE%B5",
+            "heat": "热度 11750932",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "亚太前沿领域机遇看中国",
+            "url": "https://www.douyin.com/search/%E4%BA%9A%E5%A4%AA%E5%89%8D%E6%B2%BF%E9%A2%86%E5%9F%9F%E6%9C%BA%E9%81%87%E7%9C%8B%E4%B8%AD%E5%9B%BD",
+            "heat": "热度 11674802",
+            "extra": ""
+          },
+          {
+            "title": "外交部回应高市早苗涉台问题表态",
+            "url": "https://www.douyin.com/search/%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%B6%89%E5%8F%B0%E9%97%AE%E9%A2%98%E8%A1%A8%E6%80%81",
+            "heat": "热度 11139752",
+            "extra": ""
+          },
+          {
+            "title": "粤菜亮相APEC欢迎晚宴",
+            "url": "https://www.douyin.com/search/%E7%B2%A4%E8%8F%9C%E4%BA%AE%E7%9B%B8APEC%E6%AC%A2%E8%BF%8E%E6%99%9A%E5%AE%B4",
+            "heat": "热度 10549473",
+            "extra": ""
+          },
+          {
+            "title": "普京抵达塔吉克斯坦进行访问",
+            "url": "https://www.douyin.com/search/%E6%99%AE%E4%BA%AC%E6%8A%B5%E8%BE%BE%E5%A1%94%E5%90%89%E5%85%8B%E6%96%AF%E5%9D%A6%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AE",
+            "heat": "热度 10482537",
+            "extra": ""
+          },
+          {
+            "title": "APEC晚宴荔枝冰酒厂家回应",
+            "url": "https://www.douyin.com/search/APEC%E6%99%9A%E5%AE%B4%E8%8D%94%E6%9E%9D%E5%86%B0%E9%85%92%E5%8E%82%E5%AE%B6%E5%9B%9E%E5%BA%94",
+            "heat": "热度 9371607",
+            "extra": ""
+          },
+          {
+            "title": "灯火里的深圳 照见开放与活力",
+            "url": "https://www.douyin.com/search/%E7%81%AF%E7%81%AB%E9%87%8C%E7%9A%84%E6%B7%B1%E5%9C%B3%20%E7%85%A7%E8%A7%81%E5%BC%80%E6%94%BE%E4%B8%8E%E6%B4%BB%E5%8A%9B",
+            "heat": "热度 9351583",
+            "extra": ""
+          },
+          {
+            "title": "谢谢你深圳",
+            "url": "https://www.douyin.com/search/%E8%B0%A2%E8%B0%A2%E4%BD%A0%E6%B7%B1%E5%9C%B3",
+            "heat": "热度 9341679",
+            "extra": ""
+          },
+          {
+            "title": "高市早苗搭话特朗普遭无视",
+            "url": "https://www.douyin.com/search/%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%90%AD%E8%AF%9D%E7%89%B9%E6%9C%97%E6%99%AE%E9%81%AD%E6%97%A0%E8%A7%86",
+            "heat": "热度 9311336",
+            "extra": ""
+          },
+          {
+            "title": "冬天吃碳水过热乎日子",
+            "url": "https://www.douyin.com/search/%E5%86%AC%E5%A4%A9%E5%90%83%E7%A2%B3%E6%B0%B4%E8%BF%87%E7%83%AD%E4%B9%8E%E6%97%A5%E5%AD%90",
+            "heat": "热度 9236426",
+            "extra": ""
+          },
+          {
+            "title": "文班亚马再现“超模”出手",
+            "url": "https://www.douyin.com/search/%E6%96%87%E7%8F%AD%E4%BA%9A%E9%A9%AC%E5%86%8D%E7%8E%B0%E2%80%9C%E8%B6%85%E6%A8%A1%E2%80%9D%E5%87%BA%E6%89%8B",
+            "heat": "热度 9203430",
+            "extra": ""
+          },
+          {
+            "title": "社保断缴3个月账户清零不实",
+            "url": "https://www.douyin.com/search/%E7%A4%BE%E4%BF%9D%E6%96%AD%E7%BC%B43%E4%B8%AA%E6%9C%88%E8%B4%A6%E6%88%B7%E6%B8%85%E9%9B%B6%E4%B8%8D%E5%AE%9E",
+            "heat": "热度 9178429",
+            "extra": ""
+          },
+          {
+            "title": "国内金价跌至7字开头",
+            "url": "https://www.douyin.com/search/%E5%9B%BD%E5%86%85%E9%87%91%E4%BB%B7%E8%B7%8C%E8%87%B37%E5%AD%97%E5%BC%80%E5%A4%B4",
+            "heat": "热度 9169912",
+            "extra": ""
+          },
+          {
+            "title": "德国车手喊话张雪想做德国代理",
+            "url": "https://www.douyin.com/search/%E5%BE%B7%E5%9B%BD%E8%BD%A6%E6%89%8B%E5%96%8A%E8%AF%9D%E5%BC%A0%E9%9B%AA%E6%83%B3%E5%81%9A%E5%BE%B7%E5%9B%BD%E4%BB%A3%E7%90%86",
+            "heat": "热度 9168252",
+            "extra": ""
+          },
+          {
+            "title": "白晶陈泽文69:70孟博龙李瑞",
+            "url": "https://www.douyin.com/search/%E7%99%BD%E6%99%B6%E9%99%88%E6%B3%BD%E6%96%8769%3A70%E5%AD%9F%E5%8D%9A%E9%BE%99%E6%9D%8E%E7%91%9E",
+            "heat": "热度 9114114",
+            "extra": ""
+          },
+          {
+            "title": "特朗普结束亚洲行返回白宫",
+            "url": "https://www.douyin.com/search/%E7%89%B9%E6%9C%97%E6%99%AE%E7%BB%93%E6%9D%9F%E4%BA%9A%E6%B4%B2%E8%A1%8C%E8%BF%94%E5%9B%9E%E7%99%BD%E5%AE%AB",
+            "heat": "热度 8956362",
+            "extra": ""
+          },
+          {
+            "title": "墨西哥总统发视频感谢中方女保镖",
+            "url": "https://www.douyin.com/search/%E5%A2%A8%E8%A5%BF%E5%93%A5%E6%80%BB%E7%BB%9F%E5%8F%91%E8%A7%86%E9%A2%91%E6%84%9F%E8%B0%A2%E4%B8%AD%E6%96%B9%E5%A5%B3%E4%BF%9D%E9%95%96",
+            "heat": "热度 8874452",
+            "extra": ""
+          },
+          {
+            "title": "朱雀三号回收发动机再次点火",
+            "url": "https://www.douyin.com/search/%E6%9C%B1%E9%9B%80%E4%B8%89%E5%8F%B7%E5%9B%9E%E6%94%B6%E5%8F%91%E5%8A%A8%E6%9C%BA%E5%86%8D%E6%AC%A1%E7%82%B9%E7%81%AB",
+            "heat": "热度 8669487",
+            "extra": ""
+          },
+          {
+            "title": "周楷恒101:92哈德森",
+            "url": "https://www.douyin.com/search/%E5%91%A8%E6%A5%B7%E6%81%92101%3A92%E5%93%88%E5%BE%B7%E6%A3%AE",
+            "heat": "热度 8635014",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "bilibili_popular",
+        "name": "B站热门视频",
+        "category": "视频内容风向",
+        "fetcher": "fetch_bilibili_popular",
+        "limit": 15,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "「第一人称」真实的《西游记》有多恐怖？你一觉醒来变成了唐僧，你还敢继续取经吗？【AI全民制作人】",
+            "url": "https://www.bilibili.com/video/BV1g4sr6AEU5",
+            "heat": "播放 2939531 / 赞 164013",
+            "extra": "",
+            "desc": ""
+          },
+          {
+            "title": "当我用AI续写爱情公寓4关谷悠悠婚礼【AI全民制作人】",
+            "url": "https://www.bilibili.com/video/BV1atse6EEfx",
+            "heat": "播放 225083 / 赞 40384",
+            "extra": "别害怕勇敢的向前走~不管未来收获什么\n拒绝意难平，CP通通HE\n无论你正站在人生的高光，还是暂时走在低谷，希望这群老朋友，能再陪你笑一场。\n爱情公寓，永远为我们留了一盏灯。",
+            "desc": ""
+          },
+          {
+            "title": "【独家】《罗小黑战记》第44话 冬冬拯救行动方案五【10月国创】",
+            "url": "https://www.bilibili.com/video/BV16hsY6tExz",
+            "heat": "播放 2856195 / 赞 115445",
+            "extra": "每周五12:00，B站独播！"
+          },
+          {
+            "title": "90分钟中俄美会晤，摆了哪些事上桌？王骁APEC观察",
+            "url": "https://www.bilibili.com/video/BV18psq6JEgF",
+            "heat": "播放 1014472 / 赞 67635",
+            "extra": "一键三连推荐给更多朋友！"
+          },
+          {
+            "title": "分不清哪个是倒放的",
+            "url": "https://www.bilibili.com/video/BV1iis66TEEn",
+            "heat": "播放 1986296 / 赞 111732",
+            "extra": ""
+          },
+          {
+            "title": "爱沙尼亚惨遭俄戏耍",
+            "url": "https://www.bilibili.com/video/BV1dmsq6wEMb",
+            "heat": "播放 854066 / 赞 62157",
+            "extra": "本视频提及事件以及信息来源如下：\n《爱沙尼亚制定“末日韧性”战略》来自：参考消息，2026-11-17 20:30发布\n《指控俄罗斯袭击其国防企业，爱沙尼亚宣布将关闭与俄罗斯的边境口岸》来自：四川观察，2026-11-16 09:00发布\n"
+          },
+          {
+            "title": "探秘中国十大“禁区”，会吃人的森林！《09 哀牢山》",
+            "url": "https://www.bilibili.com/video/BV1JJsm6wEdA",
+            "heat": "播放 1678348 / 赞 63217",
+            "extra": "纯爱输出，为爱发电，无任何推广，希望能给大家好好下饭！最后感谢大家观看，\n这期视频拍了挺久的，哀牢山是个非常危险的地方，无不良引导，请勿擅自轻易尝试哦！相信科学，相信真理，爱护环境，遵纪守法。最后再求求大家给个三连吧！！！"
+          },
+          {
+            "title": "非凡之恶：这两人玩GTA6认识的",
+            "url": "https://www.bilibili.com/video/BV11Qs46UEQg",
+            "heat": "播放 2307633 / 赞 81718",
+            "extra": "内容AI生成，仅供娱乐，请勿过度解读"
+          },
+          {
+            "title": "【登陆少年】朱志鑫21岁生日特别企划短片《署名》(Signature)",
+            "url": "https://www.bilibili.com/video/BV13qs46FE9C",
+            "heat": "播放 237215 / 赞 147688",
+            "extra": "𝐒𝐓𝐎𝐑𝐘 𝟎𝟏 / 𝐒𝐓𝐎𝐑𝐘 𝟎𝟐 / 𝐒𝐓𝐎𝐑𝐘 𝟎𝟑\n𝐀𝐔𝐓𝐇𝐎𝐑：______\n\nI define myself, I pen my own story."
+          },
+          {
+            "title": "AI:我算出了最优解！和珅:谢邀，刚把桥贪到只剩一根绳！",
+            "url": "https://www.bilibili.com/video/BV18AsQ6bEs6",
+            "heat": "播放 1018576 / 赞 51261",
+            "extra": "觉得视频不错的小伙伴可以点赞三连催更一下！\n------------------------------------------------------------\n游戏来源于：@喵了个猫了个咪了个猫  \n游戏网站：https://aren"
+          },
+          {
+            "title": "第一次在B站发视频，求关注！",
+            "url": "https://www.bilibili.com/video/BV1Z1sA6vEN6",
+            "heat": "播放 1355890 / 赞 405768",
+            "extra": "-"
+          },
+          {
+            "title": "《绝区零》3.4版本PV | 长日终尽",
+            "url": "https://www.bilibili.com/video/BV1nuyWz8Eji",
+            "heat": "播放 539471 / 赞 49662",
+            "extra": "你所选择的命运，远比卡洛丝曾为你编排的…更加残酷。\n你与她…逐日者们的生死相搏，本就注定会将世界再度撕裂——正如他们所期望的那样。\n曾一度坠落的太阳之子啊，现在…该到你做出选择的时候了。\n \n—— 欢迎来到罗斯凯利法！——\n▼《绝区零》3."
+          },
+          {
+            "title": "“电影永远拍不出来，这种意气风发的感觉！”",
+            "url": "https://www.bilibili.com/video/BV1BWsB6qEWg",
+            "heat": "播放 365594 / 赞 27955",
+            "extra": "“电影永远拍不出来，这种意气风发的感觉！”"
+          },
+          {
+            "title": "这谁能播的过他？看大司马玩GTA6简直能笑死，弹幕：太有节目了",
+            "url": "https://www.bilibili.com/video/BV1gMsh6vEHF",
+            "heat": "播放 1090971 / 赞 15128",
+            "extra": "逆"
+          },
+          {
+            "title": "菲比：事已至此 先吃饭吧",
+            "url": "https://www.bilibili.com/video/BV1tysi6LET8",
+            "heat": "播放 544488 / 赞 36135",
+            "extra": "胡闹大排档开张啦！！"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "bilibili_hot_search",
+        "name": "B站热搜",
+        "category": "视频内容风向",
+        "fetcher": "fetch_bilibili_hot_search",
+        "limit": 15,
+        "note": "公开接口，稳定"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "中俄美元首历史性会晤为何在中国",
+            "url": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%8E%86%E5%8F%B2%E6%80%A7%E4%BC%9A%E6%99%A4%E4%B8%BA%E4%BD%95%E5%9C%A8%E4%B8%AD%E5%9B%BD",
+            "heat": "热搜分 2888607",
+            "extra": "中俄美元首历史性会晤为何在中国",
+            "desc": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
+          },
+          {
+            "title": "UP主解读AI声称证明黎曼猜想",
+            "url": "https://search.bilibili.com/all?keyword=UP%E4%B8%BB%E8%A7%A3%E8%AF%BBAI%E5%A3%B0%E7%A7%B0%E8%AF%81%E6%98%8E%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3",
+            "heat": "热搜分 2674389",
+            "extra": "UP主解读AI声称证明黎曼猜想",
+            "desc": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
+          },
+          {
+            "title": "回看Bin这一年有多梦幻",
+            "url": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E7%9C%8BBin%E8%BF%99%E4%B8%80%E5%B9%B4%E6%9C%89%E5%A4%9A%E6%A2%A6%E5%B9%BB",
+            "heat": "热搜分 1256483",
+            "extra": "回看Bin这一年有多梦幻"
+          },
+          {
+            "title": "AI攻破黎曼猜想声明细节",
+            "url": "https://search.bilibili.com/all?keyword=AI%E6%94%BB%E7%A0%B4%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3%E5%A3%B0%E6%98%8E%E7%BB%86%E8%8A%82",
+            "heat": "热搜分 1006688",
+            "extra": "AI攻破黎曼猜想声明细节"
+          },
+          {
+            "title": "DK官宣Doran和Kanavi加入",
+            "url": "https://search.bilibili.com/all?keyword=DK%E5%AE%98%E5%AE%A3Doran%E5%92%8CKanavi%E5%8A%A0%E5%85%A5",
+            "heat": "热搜分 955423",
+            "extra": "DK官宣Doran和Kanavi加入"
+          },
+          {
+            "title": "任贤齐入驻B站",
+            "url": "https://search.bilibili.com/all?keyword=%E4%BB%BB%E8%B4%A4%E9%BD%90%E5%85%A5%E9%A9%BBB%E7%AB%99",
+            "heat": "热搜分 830380",
+            "extra": "任贤齐入驻B站"
+          },
+          {
+            "title": "数学家称用AI证明了黎曼猜想",
+            "url": "https://search.bilibili.com/all?keyword=%E6%95%B0%E5%AD%A6%E5%AE%B6%E7%A7%B0%E7%94%A8AI%E8%AF%81%E6%98%8E%E4%BA%86%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3",
+            "heat": "热搜分 633848",
+            "extra": "数学家称用AI证明了黎曼猜想"
+          },
+          {
+            "title": "巴西一部落走出雨林要食物",
+            "url": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E8%A5%BF%E4%B8%80%E9%83%A8%E8%90%BD%E8%B5%B0%E5%87%BA%E9%9B%A8%E6%9E%97%E8%A6%81%E9%A3%9F%E7%89%A9",
+            "heat": "热搜分 572297",
+            "extra": "巴西一部落走出雨林要食物"
+          },
+          {
+            "title": "明年闪存供应或增超25%",
+            "url": "https://search.bilibili.com/all?keyword=%E6%98%8E%E5%B9%B4%E9%97%AA%E5%AD%98%E4%BE%9B%E5%BA%94%E6%88%96%E5%A2%9E%E8%B6%8525%25",
+            "heat": "热搜分 563565",
+            "extra": "明年闪存供应或增超25%"
+          },
+          {
+            "title": "AI御三家模型屎山代码论剑",
+            "url": "https://search.bilibili.com/all?keyword=AI%E5%BE%A1%E4%B8%89%E5%AE%B6%E6%A8%A1%E5%9E%8B%E5%B1%8E%E5%B1%B1%E4%BB%A3%E7%A0%81%E8%AE%BA%E5%89%91",
+            "heat": "热搜分 546887",
+            "extra": "AI御三家模型屎山代码论剑"
+          },
+          {
+            "title": "罗小黑",
+            "url": "https://search.bilibili.com/all?keyword=%E7%BD%97%E5%B0%8F%E9%BB%91",
+            "heat": "热搜分 546461",
+            "extra": "罗小黑史上最长单集"
+          },
+          {
+            "title": "听陈楚生狂流被点燃了",
+            "url": "https://search.bilibili.com/all?keyword=%E5%90%AC%E9%99%88%E6%A5%9A%E7%94%9F%E7%8B%82%E6%B5%81%E8%A2%AB%E7%82%B9%E7%87%83%E4%BA%86",
+            "heat": "热搜分 545168",
+            "extra": "听陈楚生狂流被点燃了"
+          },
+          {
+            "title": "把Win10装进哔哩哔哩",
+            "url": "https://search.bilibili.com/all?keyword=%E6%8A%8AWin10%E8%A3%85%E8%BF%9B%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9",
+            "heat": "热搜分 528701",
+            "extra": "把Win10装进哔哩哔哩"
+          },
+          {
+            "title": "食贫道何以当归2先导片",
+            "url": "https://search.bilibili.com/all?keyword=%E9%A3%9F%E8%B4%AB%E9%81%93%E4%BD%95%E4%BB%A5%E5%BD%93%E5%BD%922%E5%85%88%E5%AF%BC%E7%89%87",
+            "heat": "热搜分 508744",
+            "extra": "食贫道何以当归2先导片"
+          },
+          {
+            "title": "揭开禁区哀牢山的秘密",
+            "url": "https://search.bilibili.com/all?keyword=%E6%8F%AD%E5%BC%80%E7%A6%81%E5%8C%BA%E5%93%80%E7%89%A2%E5%B1%B1%E7%9A%84%E7%A7%98%E5%AF%86",
+            "heat": "热搜分 505718",
+            "extra": "揭开禁区哀牢山的秘密"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ifanr",
+        "name": "爱范儿",
+        "category": "商业科技媒体",
+        "fetcher": "fetch_ifanr",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+            "url": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "最好的智驾芯片，是让你彻底忘掉它。"
+          },
+          {
+            "title": "首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
+            "url": "https://www.ifanr.com/1690642?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "华为推出子品牌 OSTA 星芒，首款手机 O1 Pro 搭载麒麟 9030S 与鸿蒙 7 AI 先锋版，采用阔直板形态。系统级 AI 屏、小艺空间与长期记忆能力尝试重构手机交互，隐私机制强调本地优先、数据最小化和用户可控。"
+          },
+          {
+            "title": "给 Gemini 道歉，请自觉排队",
+            "url": "https://www.ifanr.com/1690572?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "触屏只是它最不起眼的升级｜MacBook PROLED 评测",
+            "url": "https://www.ifanr.com/1690404?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "AI Agent 元年，苹果是最后一个入局的巨头",
+            "url": "https://www.ifanr.com/1690510?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
+            "url": "https://www.ifanr.com/1690473?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+            "url": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
+            "url": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "今年是阔屏的元年，阔屏是手机的今后十年",
+            "url": "https://www.ifanr.com/1690322?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "刚拒绝黄仁勋回归，英伟达官宣全员加薪，热门接班人曝光",
+            "url": "https://www.ifanr.com/1690288?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
+            "url": "https://www.ifanr.com/1690255?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "刚刚，Gemini 4 Neon 突袭发布，性价比一夜斩杀 Opus 5.5",
+            "url": "https://www.ifanr.com/1690235?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "《GTA VI》首发体验：过去十年最好的游戏，也可能是未来十年最好的游戏",
+            "url": "https://www.ifanr.com/1690188?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+            "url": "https://www.ifanr.com/1690546?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "这届高校学生，为何选择用鸿蒙创新？",
+            "url": "https://www.ifanr.com/1690168?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "深度实测 GPT-6.2：强是真强，难用也是真难用",
+            "url": "https://www.ifanr.com/1690130?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "即梦 Seedance 2.5 大升级，AI 视频生成终于有了自己的 4K 生产线",
+            "url": "https://www.ifanr.com/1690033?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
+            "url": "https://www.ifanr.com/1690064?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "GPT-6.2 Astra 刚发布即遭大量差评，实测后我觉得它有点冤",
+            "url": "https://www.ifanr.com/1690103?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "黄仁勋官宣愿意回归，英伟达董事会：不考虑！",
+            "url": "https://www.ifanr.com/1689994?utm_source=rss&utm_medium=rss&utm_campaign=",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "geekpark",
+        "name": "极客公园",
+        "category": "科技商业媒体",
+        "fetcher": "fetch_geekpark",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "估值 410 亿美元，贝佐斯打造「物理世界的 OpenAI」",
+            "url": "http://www.geekpark.net/news/374282",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "AI 吞掉了软件，现在，它要吞掉工业了。"
+          },
+          {
+            "title": "1.27 万亿美元，Anthropic 挂牌上市；吴泳铭：千问已在平头哥芯片训练下一代模型；苹果被曝自研 AI 智能体｜极客早知道",
+            "url": "http://www.geekpark.net/news/374235",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "谷歌 Gemini 现可直接操作苹果 Mac 电脑；ChatGPT 新增「实时听写」功能；蚂蚁集团上半年利润增长 17%。"
+          },
+          {
+            "title": "「北美大豆包」谷歌，终于杀回 AI 牌桌中央",
+            "url": "http://www.geekpark.net/news/374196",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "WorkBuddy 日活超过 1000 万；曝英伟达未投企业责任险，或因黄仁勋事件遭巨额索赔；DeepSeek 再调整 API 计费 | 极客早知道",
+            "url": "http://www.geekpark.net/news/374177",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋",
+            "url": "http://www.geekpark.net/news/374175",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "影视飓风、Manus、影石、OPPO......极客公园创新大会 2027 嘉宾阵容更新！",
+            "url": "http://www.geekpark.net/news/374125",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol；王兴兴：家用机器人或将迎来技术突破；《GTA 6》开发商批评 AI 公司放任游戏仿制行为｜极客早知道",
+            "url": "http://www.geekpark.net/news/374109",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "最大规模具身大模型挑战赛落幕，48 小时真机总决赛比出了什么？",
+            "url": "http://www.geekpark.net/news/374103",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "AI，没有抛弃小城商家",
+            "url": "http://www.geekpark.net/news/374101",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "腾讯 Hy4 flash 实测：快速、实惠、聪明，国模进入过日子时代",
+            "url": "http://www.geekpark.net/news/374083",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "全村希望，千问 4 Max 正式发布，2.4 万亿参数模型「进厂打工」",
+            "url": "http://www.geekpark.net/news/374079",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "OpenAI 和 Meta 联手，打通了 Agent 商业「最后一公里」",
+            "url": "http://www.geekpark.net/news/374075",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "消息称黄仁勋回归尚未进入英伟达董事会议程；腾讯总办号召AI时代再创业；AI 演员虚假代言被罚",
+            "url": "http://www.geekpark.net/news/374056",
+            "heat": "Tue, 17 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "曝黄仁勋考虑重返英伟达担任 CEO；苹果计划明年发布首款智能眼镜；OpenAI 撤销独立机器人研究团队",
+            "url": "http://www.geekpark.net/news/373994",
+            "heat": "Mon, 16 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
+            "url": "http://www.geekpark.net/news/373993",
+            "heat": "Sun, 15 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "AI 录音硬件卖的是时间差，窗口可能只剩半年",
+            "url": "http://www.geekpark.net/news/373946",
+            "heat": "Fri, 13 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+            "url": "http://www.geekpark.net/news/373937",
+            "heat": "Fri, 13 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "穿了 33 年皮衣的那个人，离开了英伟达",
+            "url": "http://www.geekpark.net/news/373906",
+            "heat": "Thu, 12 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "接入多款第三方模型，豆包工作也模型自由了",
+            "url": "http://www.geekpark.net/news/373881",
+            "heat": "Thu, 12 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+            "url": "http://www.geekpark.net/news/373860",
+            "heat": "Thu, 12 Nov 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "sspai",
+        "name": "少数派",
+        "category": "数字生活/效率/副业",
+        "fetcher": "fetch_sspai",
+        "limit": 15,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "本周看什么 | 最近值得一看的 10 部作品",
+            "url": "https://sspai.com/post/119337",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "📅本周新预告《克里夫·布斯的惊险再冒险》终极预告11月18日，《好莱坞往事》续集电影《克里夫·布斯的惊险再冒险》发布了终极预告，将于11月25日在北美上映，12月23日上线Netflix。大卫·芬奇执 ..."
+          },
+          {
+            "title": "游戏史最高分，不负 13 年的等待：《GTA 6》游玩体验",
+            "url": "https://sspai.com/post/119327",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "编注：本文首发于「篝火营地」，原作者多边形。少数派经授权后转载，仅对文章格式略作调整。原标题：《侠盗猎车手6》游戏评测：10分｜篝火。作为RockstarGames时隔13年推出的《侠盗猎车手》系列新 ..."
+          },
+          {
+            "title": "浮屏：截图即可「上岛」，还能帮你记录生活",
+            "url": "https://sspai.com/post/118879",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "派早报：Google 推出 Gemini 4 Neon 模型，网易 UU 远程将于 12 月推出付费会员等",
+            "url": "https://sspai.com/post/119311",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "给 Apple 的 2026 年打分，请你一起参与",
+            "url": "https://sspai.com/post/119191",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "新玩意 256｜少数派的编辑们最近买了啥？",
+            "url": "https://sspai.com/post/119287",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "有必要但欠平衡：浅评 macOS 27.3 新版权限控制机制",
+            "url": "https://sspai.com/prime/story/system-app-protection-override-macos-27-3",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "徒步旅行指南 | 玉龙虎跳峡与天堂雨崩",
+            "url": "https://sspai.com/post/119039",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "派早报：Apple 年度应用、TGA 2026 分别公布入围名单等",
+            "url": "https://sspai.com/post/119239",
+            "heat": "Thu, 19 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "10 月音乐精选：音乐丰收季，必听这 7 张新专辑",
+            "url": "https://sspai.com/post/118985",
+            "heat": "Wed, 18 Nov 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "ithome",
+        "name": "IT之家",
+        "category": "科技新闻",
+        "fetcher": "fetch_ithome",
+        "limit": 20,
+        "note": "官方 RSS"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "独占特性确认：华为 Mate 系列旗舰机“无缘”OSTA 小星芒、AI 屏等功能",
+            "url": "https://www.ithome.com/1/030/284.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "华为星芒 OSTA O1 Pro 已于昨日发布，品牌总经理刘赫在自己微博评论区解答了不少消费者的疑惑。针对星芒首发的新功能 Mate 系列能否 OTA 支持相关问题，刘赫透露 Mate 旗舰也“无缘”OSTA 小星芒、AI 屏等功能。#OSTA星芒手机#"
+          },
+          {
+            "title": "网传零跑 A10 后备箱被几箱啤酒压穿？官方回应系下层独立储物盒受损，非底板或整车承载结构损坏",
+            "url": "https://www.ithome.com/1/030/283.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": "",
+            "desc": "近日，有零跑 A10 的车主反馈，自己的后备箱装了几箱啤酒就被压穿底了。随后该情况引发了网友热议。针对网传情况，零跑汽车官方在昨晚 23:05 发布情况说明，称本次受损部件为后备厢盖板下方的独立储物盒，系装载物品超过其设计承重上限所致，并非后备厢底板或整车承载结构受损。我们已与用户充分沟通并获得了用户的理解。"
+          },
+          {
+            "title": "华为星芒刘赫：OSTA O1 Pro 最受欢迎的 16G 版本已在全平台售罄，远超预期",
+            "url": "https://www.ithome.com/1/030/282.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "QQ 鸿蒙版 App 获 9.2.90 邀测升级：新增支持互动标识、表情搜索等功能",
+            "url": "https://www.ithome.com/1/030/279.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明",
+            "url": "https://www.ithome.com/1/030/278.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "明基 AK900ST AI 高尔夫投影机发售：6000lm 亮度、短焦镜头设计，52999 元",
+            "url": "https://www.ithome.com/1/030/277.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "在欧洲已拿下 12 国，特斯拉辅助驾驶系统获意大利运行许可",
+            "url": "https://www.ithome.com/1/030/276.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "约翰斯 · 霍普金斯大学新研究：美国最早明年就可能面临电网设备短缺",
+            "url": "https://www.ithome.com/1/030/275.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "伦敦交通局遭网络攻击，26.5 万名“牡蛎”交通卡用户数据泄露",
+            "url": "https://www.ithome.com/1/030/274.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "内存成本涨幅前所未有，Valve 坦承 Steam Machine 未来售价“无法得知”",
+            "url": "https://www.ithome.com/1/030/273.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "德国首家，奔驰获批在“老家”开展点到点辅助驾驶",
+            "url": "https://www.ithome.com/1/030/249.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "三星电子高管：Neocloud 风险有限，AI 投资基于实际需求",
+            "url": "https://www.ithome.com/1/030/247.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "Anthropic 上市次日股价下跌 9%，AI 板块雪上加霜",
+            "url": "https://www.ithome.com/1/030/246.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "比亚迪腾势汽车李慧：易三方 Evo 是全球独一无二的硬核技术平台，友商追赶了易三方超过三年也没追上",
+            "url": "https://www.ithome.com/1/030/244.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "三星电子非半导体板块内存平均采购价今年前九个月同比暴涨 263%",
+            "url": "https://www.ithome.com/1/030/243.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "我国成功发射卫星互联网低轨 30 组卫星",
+            "url": "https://www.ithome.com/1/030/242.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "加州禁令引发连锁反应，Waymo 暂停全美 Robotaxi 高速公路服务",
+            "url": "https://www.ithome.com/1/030/241.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "《堡垒之夜》致敬《GTA 4》，重现主角 Niko 表哥 Roman“名台词”",
+            "url": "https://www.ithome.com/1/030/240.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "吉利银河首款旗舰大五座 SUV 银河 M8 将于 11 月 24 日预售",
+            "url": "https://www.ithome.com/1/030/239.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          },
+          {
+            "title": "Take-Two 前 CEO 费德：《GTA 6》将是 AI 时代前夜最后的“传统”3A 大作",
+            "url": "https://www.ithome.com/1/030/238.htm",
+            "heat": "Fri, 20 Nov 2026",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "v2ex",
+        "name": "V2EX 热帖",
+        "category": "开发者社区",
+        "fetcher": "fetch_v2ex",
+        "limit": 20,
+        "note": "公开 API；大陆网络可能不通，Actions 云端（海外）正常"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "我的 App 火了，然后苹果威胁要关闭我的开发者账号",
+            "url": "https://www.v2ex.com/t/1258411",
+            "heat": "回复 222",
+            "extra": "节点: iDev",
+            "desc": "iDev - @maplecomb - 我是 iOS 上安卓模拟器[Andarium](https://apps.apple.com/us/app/andarium/id6827505184)的开发者。昨天这个 App 通过苹果审核"
+          },
+          {
+            "title": "结婚后对象想买特斯拉 model y",
+            "url": "https://www.v2ex.com/t/1258451",
+            "heat": "回复 173",
+            "extra": "节点: 生活",
+            "desc": "生活 - @ttzhengqian - 婚前一直没买车，结婚后对象想买个特斯拉，看了看落地要 27 左右，对象电车只考虑特斯拉。我现在的用车场景不多，我现在每周都高铁回去。落地 27w 感觉还是贵，心里还是不想买，对象说他出一部分但是我还是"
+          },
+          {
+            "title": "因为工作老生气,然后想了解一下看的观点是不是信息茧房",
+            "url": "https://www.v2ex.com/t/1258423",
+            "heat": "回复 106",
+            "extra": "节点: 程序员"
+          },
+          {
+            "title": "牵手、亲吻之后，第二天却被告知不想继续了",
+            "url": "https://www.v2ex.com/t/1258512",
+            "heat": "回复 102",
+            "extra": "节点: 情感问题"
+          },
+          {
+            "title": "X 也被封了，难受",
+            "url": "https://www.v2ex.com/t/1258429",
+            "heat": "回复 73",
+            "extra": "节点: Twitter"
+          },
+          {
+            "title": "95 年生，今年 31，准备买辆车，想听听兄弟们的建议。",
+            "url": "https://www.v2ex.com/t/1258549",
+            "heat": "回复 72",
+            "extra": "节点: 汽车"
+          },
+          {
+            "title": "不是，鸽们，你 6",
+            "url": "https://www.v2ex.com/t/1258420",
+            "heat": "回复 69",
+            "extra": "节点: 生活"
+          },
+          {
+            "title": "GTA6 是在 GTA 当力工的日子？",
+            "url": "https://www.v2ex.com/t/1258427",
+            "heat": "回复 62",
+            "extra": "节点: Grand Theft Auto"
+          },
+          {
+            "title": "Claude 真的吹过头了吗？实测下来很多场景还不如 GPT",
+            "url": "https://www.v2ex.com/t/1258440",
+            "heat": "回复 59",
+            "extra": "节点: 程序员"
+          },
+          {
+            "title": "听过 ICQ 没？OICQ？做了个 OICU",
+            "url": "https://www.v2ex.com/t/1258464",
+            "heat": "回复 51",
+            "extra": "节点: 分享创造"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "hn",
+        "name": "Hacker News",
+        "category": "全球科技风向",
+        "fetcher": "fetch_hn",
+        "limit": 15,
+        "note": "官方公开 API",
+        "lang": "en"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "Hurried Announcement: Alessandro Masullo GRH",
+            "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+            "heat": "427 分 / 134 评论",
+            "extra": "",
+            "desc": "Hi everyone, I am at the American Mathematical Society Executive Committee and Board of Trustees meeting now, and about to chair an hours-long meeting, but this is urgent, so I will try to get this ou",
+            "zh": "紧急公告：亚历山德罗·马苏洛 GRH"
+          },
+          {
+            "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+            "url": "https://alpo.ge/remark.pdf",
+            "heat": "1899 分 / 1278 评论",
+            "extra": "",
+            "desc": "",
+            "zh": "莱文特·阿尔珀格声称证明了广义黎曼猜想 [pdf]"
+          },
+          {
+            "title": "Language Models Can Rewrite Their Own Weights",
+            "url": "https://arxiv.org/abs/2611.21885",
+            "heat": "225 分 / 89 评论",
+            "extra": "",
+            "zh": "语言模型能够重写自身权重"
+          },
+          {
+            "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+            "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+            "heat": "114 分 / 19 评论",
+            "extra": "",
+            "zh": "无外力纳维-斯托克斯奇点与广义黎曼猜想"
+          },
+          {
+            "title": "We promoted developers into architects without informing them",
+            "url": "https://manidoraisamy.com/developer-to-architect.html",
+            "heat": "65 分 / 24 评论",
+            "extra": "",
+            "zh": "我们将开发者提拔为架构师却未告知他们"
+          },
+          {
+            "title": "I'll never buy Framework hardware again",
+            "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+            "heat": "696 分 / 448 评论",
+            "extra": "",
+            "zh": "我再也不会购买 Framework 硬件了"
+          },
+          {
+            "title": "Finite-time blow-up for the Navier–Stokes equations",
+            "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+            "heat": "172 分 / 53 评论",
+            "extra": "",
+            "zh": "纳维-斯托克斯方程的有限时间爆破"
+          },
+          {
+            "title": "Vibecoding an Inference Chip",
+            "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+            "heat": "27 分 / 7 评论",
+            "extra": "",
+            "zh": "氛围编程一款推理芯片"
+          },
+          {
+            "title": "If you can't explain something in simple terms, you don't understand it (2017)",
+            "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
+            "heat": "522 分 / 263 评论",
+            "extra": "",
+            "zh": "如果你不能用简单的话解释一件事，说明你并不理解它（2017）"
+          },
+          {
+            "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+            "url": "https://architectlabs.com/blog/frostbite",
+            "heat": "536 分 / 288 评论",
+            "extra": "",
+            "zh": "Frostbite：一种由 AI 发现、设计并验证的新 CPU 架构"
+          },
+          {
+            "title": "Running two PSP emulators on one Switch 2 and sharing one via GameShare",
+            "url": "https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md",
+            "heat": "33 分 / 0 评论",
+            "extra": "",
+            "zh": "在一台 Switch 2 上运行两个 PSP 模拟器并通过 GameShare 共享其中一个"
+          },
+          {
+            "title": "Signal Is Serious About Protecting Your Privacy",
+            "url": "https://signal.org/blog/protecting-your-privacy/",
+            "heat": "353 分 / 216 评论",
+            "extra": "",
+            "zh": "Signal 认真对待保护你的隐私"
+          },
+          {
+            "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+            "url": "https://news.ycombinator.com/item?id=50577613",
+            "heat": "58 分 / 85 评论",
+            "extra": ""
+          },
+          {
+            "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
+            "url": "https://kobi.music/research/dettato",
+            "heat": "181 分 / 34 评论",
+            "extra": ""
+          },
+          {
+            "title": "Why YC Series A rounds fell off a cliff",
+            "url": "https://jaredheyman.medium.com/on-why-yc-series-a-rounds-fell-off-a-cliff-ab523211a2f2",
+            "heat": "56 分 / 29 评论",
+            "extra": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "id": "github_trending",
+        "name": "GitHub Trending",
+        "category": "开发者生态",
+        "fetcher": "fetch_github_trending",
+        "limit": 15,
+        "note": "HTML 解析；大陆网络可能不通，Actions 云端正常",
+        "lang": "en"
+      },
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "title": "elementalsouls/Claude-BugHunter",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter",
+            "heat": "13,920 stars",
+            "extra": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-repo",
+            "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+            "zh": "elementalsouls/Claude-BugHunter"
+          },
+          {
+            "title": "obra/superpowers",
+            "url": "https://github.com/obra/superpowers",
+            "heat": "322,737 stars",
+            "extra": "An agentic skills framework & software development methodology that works.",
+            "desc": "An agentic skills framework & software development methodology that works. - obra/superpowers",
+            "zh": "obra/superpowers"
+          },
+          {
+            "title": "HKUDS/CLI-Anything",
+            "url": "https://github.com/HKUDS/CLI-Anything",
+            "heat": "61,253 stars",
+            "extra": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+            "zh": "HKUDS/CLI-Anything"
+          },
+          {
+            "title": "jingyaogong/minimind",
+            "url": "https://github.com/jingyaogong/minimind",
+            "heat": "67,623 stars",
+            "extra": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+            "zh": "jingyaogong/minimind"
+          },
+          {
+            "title": "cursor/plugins",
+            "url": "https://github.com/cursor/plugins",
+            "heat": "17,791 stars",
+            "extra": "Cursor plugin specification and official plugins",
+            "zh": "cursor/plugins"
+          },
+          {
+            "title": "firecrawl/firecrawl",
+            "url": "https://github.com/firecrawl/firecrawl",
+            "heat": "205,087 stars",
+            "extra": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+            "zh": "firecrawl/firecrawl"
+          },
+          {
+            "title": "nginx/nginx",
+            "url": "https://github.com/nginx/nginx",
+            "heat": "32,525 stars",
+            "extra": "The official NGINX Open Source repository.",
+            "zh": "nginx/nginx"
+          },
+          {
+            "title": "openvinotoolkit/openvino",
+            "url": "https://github.com/openvinotoolkit/openvino",
+            "heat": "11,741 stars",
+            "extra": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+            "zh": "openvinotoolkit/openvino"
+          },
+          {
+            "title": "cathrynlavery/diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design",
+            "heat": "69,198 stars",
+            "extra": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types.",
+            "zh": "cathrynlavery/diagram-design"
+          },
+          {
+            "title": "mvanhorn/last30days-skill",
+            "url": "https://github.com/mvanhorn/last30days-skill",
+            "heat": "71,355 stars",
+            "extra": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a gro",
+            "zh": "mvanhorn/last30days-skill"
+          },
+          {
+            "title": "google-labs-code/stitch-skills",
+            "url": "https://github.com/google-labs-code/stitch-skills",
+            "heat": "10,965 stars",
+            "extra": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard",
+            "zh": "google-labs-code/stitch-skills"
+          },
+          {
+            "title": "mjmirza/app-store-compliance",
+            "url": "https://github.com/mjmirza/app-store-compliance",
+            "heat": "2,607 stars",
+            "extra": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection ",
+            "zh": "mjmirza/app-store-compliance"
+          },
+          {
+            "title": "Tracer-Cloud/opensre",
+            "url": "https://github.com/Tracer-Cloud/opensre",
+            "heat": "13,531 stars",
+            "extra": "The open-source agent for CI/CD reliability."
+          },
+          {
+            "title": "toeverything/AFFiNE",
+            "url": "https://github.com/toeverything/AFFiNE",
+            "heat": "75,687 stars",
+            "extra": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, s"
+          },
+          {
+            "title": "XiaoYouChR/Ghost-Downloader-3",
+            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+            "heat": "13,574 stars",
+            "extra": "The only downloader you need. 下载器的集大成者。"
+          }
+        ]
+      }
+    }
+  ]
+}
