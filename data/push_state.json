@@ -206,6 +206,7 @@
     "2026-11-22-morning": true,
     "2026-11-23-evening": true,
     "2026-11-23-weekly": true,
-    "2026-11-23-morning": true
+    "2026-11-23-morning": true,
+    "2026-11-24-evening": true
   }
 }
